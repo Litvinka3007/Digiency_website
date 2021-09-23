@@ -1,4 +1,4 @@
-// Global colors
+// GLOBAL COLORS
 
 $color-grey-light: #7B7B7B;
 $color-grey-middle: #3A3B3C;
@@ -10,8 +10,9 @@ $color-orange-light: #FFF7F4;
 $color-orange: #FF5300;
 $color-blue: #00ACFF;
 
-// Global fonts
+// GLOBAL FONTS
 
+// Font-sizes
 $font-size-xxs: 0.6rem; // 10px
 $font-size-xs: 0.75rem; // 12px
 $font-size-s: 1rem; // 16px
@@ -20,3 +21,23 @@ $font-size-l: 1.56rem; // 25px
 $font-size-xl: 1.9rem; // 31px
 $font-size-xxl: 2.4rem; // 39px
 $font-size-xxxl: 3rem; // 48px
+
+// Font-weights
+$normal-font-weight: 400;
+$medium-font-weight: 500;
+$semi-bold-font-weight: 600;
+$bold-font-weight: 700;
+
+// SPECIAL FONTS AND COLORS
+
+// Header
+$header-font-size: $font-size-m;
+$header-font-weight: $medium-font-weight;
+$header-bg-color: $color-white;
+
+$header-hight-desktop: 6.25rem;
+$header-hight-tablet: 5rem;
+$header-hight-mobile: 3rem;
+
+
+

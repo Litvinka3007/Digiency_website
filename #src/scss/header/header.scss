@@ -1,10 +1,12 @@
 .header {
   max-width: 1440px;
+  height: $header-hight-desktop;
   border: 1px solid black; // УДАЛИТЬ
+  background-color: $header-bg-color;
 }
 
 .container {
-  margin: 0 auto;
+  margin: 1rem auto 0;
 }
 
 .navbar {
@@ -16,10 +18,42 @@
   margin-left: 3.8rem;
 }
 
-@media (max-width: 768px) { // IPad
+.nav-link {
+  font-size: $header-font-size;
+  font-weight: $header-font-weight;
+}
 
+.btn-switсher {
+  padding: 0;
+}
+
+// Responsive
+@media (max-width: 768px) { // IPad
+  .container {
+    margin: auto 0;
+  }
+
+  .header {
+    height: $header-hight-tablet;
+  }
+
+  .navbar-logo {
+    width: 7rem;
+    height: auto;
+  }
 }
 
 @media (max-width: 376px) { // Mobile
+  .container {
+    margin: auto 0;
+  }
 
+  .header {
+    height: $header-hight-mobile;
+  }
+
+  .navbar-logo {
+    width: 8rem;
+    height: auto;
+  }
 }
