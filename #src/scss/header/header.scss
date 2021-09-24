@@ -18,12 +18,9 @@
   font-weight: $header-font-weight-desktop;
 }
 
-.navbar-toggler {
+.navbar-light .navbar-toggler {
   order: 2;
-}
-
-.navbar-nav .navbar-toggler {
-  border-color: $color-white;
+  border: none;
 }
 
 .btn-switсher {
