@@ -31,9 +31,12 @@ $bold-font-weight: 700;
 // SPECIAL FONTS AND COLORS
 
 // Header
-$header-font-size: $font-size-m;
-$header-font-weight: $medium-font-weight;
 $header-bg-color: $color-white;
+
+$header-font-size-desktop: $font-size-m;
+$header-font-weight-desktop: $medium-font-weight;
+$header-font-size-tablet: $font-size-s;
+$header-font-weight-tablet: $normal-font-weight;
 
 $header-hight-desktop: 6.25rem;
 $header-hight-tablet: 5rem;
