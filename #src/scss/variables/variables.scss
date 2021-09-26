@@ -10,6 +10,15 @@ $color-orange-light: #FFF7F4;
 $color-orange: #FF5300;
 $color-blue: #00ACFF;
 
+// PRIMARY COLORS
+
+$header-bg-color: $color-white; // Заменить $header-bg-color на $bg-primary-color
+$button-primary-color: $color-orange;
+
+// SECONDARY COLORS
+
+$text-secondary-color: $color-white;
+
 // GLOBAL FONTS
 
 // Font-sizes
@@ -28,10 +37,9 @@ $medium-font-weight: 500;
 $semi-bold-font-weight: 600;
 $bold-font-weight: 700;
 
-// SPECIAL FONTS AND COLORS
+// SPECIAL FONTS, SIZES AND COLORS
 
 // Header
-$header-bg-color: $color-white;
 
 $header-font-size-desktop: $font-size-m;
 $header-font-weight-desktop: $medium-font-weight;
@@ -41,6 +49,12 @@ $header-font-weight-tablet: $normal-font-weight;
 $header-hight-desktop: 6.25rem;
 $header-hight-tablet: 5rem;
 $header-hight-mobile: 3rem;
+
+// Other
+
+$button-primary-font-size: $font-size-m;
+$button-primary-font-weight: $medium-font-weight;
+
 
 
 
