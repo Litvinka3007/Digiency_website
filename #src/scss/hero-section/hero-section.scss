@@ -1,4 +1,4 @@
-.btn-primary {                             // СОЗДАТЬ MIXIN
+.btn-primary {
   width: 150px;
   height: 50px;
   border: none;
@@ -7,9 +7,8 @@
   color: $text-secondary-color;
   font-size: $button-primary-font-size;
   font-weight: $button-primary-font-weight;
-}
-
-.btn-primary:hover {
-  background-color: $button-primary-color;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  &:hover {
+    background-color: $button-primary-color;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  }
 }
