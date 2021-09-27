@@ -13,4 +13,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 1440px;
+}
+
+.text-orange {
+  color: $color-orange;
 }

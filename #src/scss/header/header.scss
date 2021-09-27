@@ -1,6 +1,5 @@
 .navbar {
   padding: 0 8.4rem;
-  width: 1440px;
   height: $header-hight-desktop;
   background-color: $header-bg-color;
 }
@@ -54,7 +53,7 @@
 
 @media (max-width: 768px) { // IPad
   .navbar {
-    width: 768px;
+    //width: 768px;
     height: $header-hight-tablet;
   }
 
@@ -67,7 +66,7 @@
 @media (max-width: 376px) { // Mobile
   .navbar {
     padding: 0 0.9rem;
-    width: 376px;
+    //width: 376px;
     height: $header-hight-mobile;
   }
 

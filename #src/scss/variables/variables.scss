@@ -12,12 +12,15 @@ $color-blue: #00ACFF;
 
 // PRIMARY COLORS
 
-$header-bg-color: $color-white; // Заменить $header-bg-color на $bg-primary-color
+$bg-primary-color: $color-orange-light;
+$header-bg-color: $color-white; // Заменить $header-bg-color на $bg-secondary-color
 $button-primary-color: $color-orange;
+$text-primary-color: $color-grey-deep;
 
 // SECONDARY COLORS
 
-$text-secondary-color: $color-white;
+$text-secondary-color: $color-grey-light;
+$text-third-color: $color-white;
 
 // GLOBAL FONTS
 
@@ -36,6 +39,11 @@ $normal-font-weight: 400;
 $medium-font-weight: 500;
 $semi-bold-font-weight: 600;
 $bold-font-weight: 700;
+
+// PRIMARY FONTS
+
+$base-font-size: $font-size-s;
+$base-font-weight: $normal-font-weight;
 
 // SPECIAL FONTS, SIZES AND COLORS
 
