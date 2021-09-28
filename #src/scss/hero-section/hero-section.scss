@@ -32,27 +32,11 @@
 }
 
 .hero-section__subheading {
-  margin-top: 0.7rem;
+  margin: 0.7rem 0 3rem 0;
   color: $text-secondary-color;
   font-size: $base-font-size;
   font-weight: $base-font-weight;
   line-height: 1.5rem;
-}
-
-.btn-primary {
-  width: 150px;
-  height: 50px;
-  margin-top: 3rem;
-  border: none;
-  border-radius: 5px;
-  background-color: $button-primary-color;
-  color: $text-third-color;
-  font-size: $button-primary-font-size;
-  font-weight: $button-primary-font-weight;
-  &:hover {
-    background-color: $button-primary-color;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-  }
 }
 
 .hero-section__main-image {
