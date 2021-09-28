@@ -19,6 +19,7 @@ $text-primary-color: $color-grey-deep;
 
 // SECONDARY COLORS
 
+$bg-secondary-color: $color-white;
 $text-secondary-color: $color-grey-light;
 $text-third-color: $color-white;
 
@@ -58,11 +59,23 @@ $header-hight-desktop: 6.25rem;
 $header-hight-tablet: 5rem;
 $header-hight-mobile: 3rem;
 
-// Other
+// OTHER
 
+// Button
 $button-primary-font-size: $font-size-m;
 $button-primary-font-weight: $medium-font-weight;
 
+// Headings
+$headings-color: $text-secondary-color;
+$headings-font-size: $base-font-size;
+$headings-font-weight: $base-font-weight;
 
+// Titles
+$titles-color: $text-primary-color;
+$titles-font-size: $font-size-xxl;
+$titles-font-weight: $semi-bold-font-weight;
 
-
+// Text in sections
+$section-text-color: $text-secondary-color;
+$section-text-font-size: $base-font-size;
+$section-text-font-weight: $base-font-weight;
