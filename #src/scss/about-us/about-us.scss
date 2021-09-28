@@ -29,34 +29,8 @@
   width: 45%;
 }
 
-.section__heading {             // ПЕРЕНЕСТИ В ОБЩИЙ ФАЙЛ
-  color: $headings-color;
-  font-size: $headings-font-size;
-  font-weight: $headings-font-weight;
-  text-transform: capitalize;
-}
-
-.about-us-section__heading {
-  margin-bottom: 1.5rem;
-}
-
-.section__title {             // ПЕРЕНЕСТИ В ОБЩИЙ ФАЙЛ
-  color: $titles-color;
-  font-size: $titles-font-size;
-  font-weight: $titles-font-weight;
-  text-transform: capitalize;
-}
-
-.about-us-section__title {
-  margin-bottom: 1.1rem;
-}
-
-.section__text {             // ПЕРЕНЕСТИ В ОБЩИЙ ФАЙЛ
-  color: $section-text-color;
-  font-size: $section-text-font-size;
-  font-weight: $section-text-font-weight;
-}
-
+.about-us-section__heading,
+.about-us-section__title,
 .about-us-section__text {
   margin-bottom: 1.5rem;
 }
@@ -67,6 +41,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  padding-left: 4.5rem;
 }
 
 .about-us-section__advantages-item {
@@ -74,15 +49,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem 1.5rem 1.3rem 1.5rem;
+  width: 270px;
+  height: 200px;
+  background-color: $color-white;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-us-section__advantages-icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2.2rem;
   width: 70px;
   height: 70px;
   border: none;
   border-radius: 50%;
   background-color: $color-grey-light;
+}
+
+.about-us-section__advantages-item:hover {
+  .about-us-section__advantages-icon {
+    background-color: red;
+  }
+}
+
+.about-us-section__advantages-name {
+  color: $text-primary-color;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  text-align: center;
 }

@@ -1,8 +1,3 @@
-html,
-body {
-  height: 100%;
-}
-
 body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
@@ -38,4 +33,24 @@ body {
 
 .text-orange {
   color: $color-orange;
+}
+
+.section__heading {
+  color: $headings-color;
+  font-size: $headings-font-size;
+  font-weight: $headings-font-weight;
+  text-transform: capitalize;
+}
+
+.section__title {
+  color: $titles-color;
+  font-size: $titles-font-size;
+  font-weight: $titles-font-weight;
+  text-transform: capitalize;
+}
+
+.section__text {
+  color: $section-text-color;
+  font-size: $section-text-font-size;
+  font-weight: $section-text-font-weight;
 }
