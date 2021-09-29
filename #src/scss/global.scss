@@ -25,6 +25,7 @@ body {
   color: $text-third-color;
   font-size: $button-primary-font-size;
   font-weight: $button-primary-font-weight;
+  text-transform: capitalize;
   &:hover {
     background-color: $button-primary-color;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
@@ -66,4 +67,15 @@ body {
     font-size: $titles-mobile-font-size;
     font-weight: $titles-mobile-font-weight;
   }
+}
+
+// Mixins
+
+@mixin block-white {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-white;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
