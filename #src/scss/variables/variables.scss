@@ -72,8 +72,11 @@ $headings-font-weight: $base-font-weight;
 
 // Titles
 $titles-color: $text-primary-color;
-$titles-font-size: $font-size-xxl;
+$titles-desktop-font-size: $font-size-xxl;
+$titles-tablet-font-size: $font-size-xl;
+$titles-mobile-font-size: $font-size-l;
 $titles-font-weight: $semi-bold-font-weight;
+$titles-mobile-font-weight: $medium-font-weight;
 
 // Text in sections
 $section-text-color: $text-secondary-color;

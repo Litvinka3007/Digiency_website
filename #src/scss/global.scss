@@ -44,7 +44,7 @@ body {
 
 .section__title {
   color: $titles-color;
-  font-size: $titles-font-size;
+  font-size: $titles-desktop-font-size;
   font-weight: $titles-font-weight;
   text-transform: capitalize;
 }
@@ -53,4 +53,17 @@ body {
   color: $section-text-color;
   font-size: $section-text-font-size;
   font-weight: $section-text-font-weight;
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    font-size: $titles-tablet-font-size;
+  }
+}
+
+@media (max-width: 376px) {
+  .section__title {
+    font-size: $titles-mobile-font-size;
+    font-weight: $titles-mobile-font-weight;
+  }
 }
