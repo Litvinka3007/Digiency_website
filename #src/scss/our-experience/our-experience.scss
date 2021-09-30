@@ -1,6 +1,6 @@
 .our-experience-section__main-container {
   background-color: $bg-primary-color;
-  border: 1px solid black;
+  border: 1px solid $bg-primary-color; // Если убрать границу, пропадает заливка над и под контентом
 }
 
 .our-experience-section__container {
@@ -10,7 +10,6 @@
   justify-content: center;
   align-items: center;
   margin: 3.75rem 8.4rem;
-  border: 1px solid black;
 }
 
 .our-experience-section__container-left {
@@ -90,7 +89,6 @@
 @media (max-width: 1200px) {
   .our-experience-section__container {
     margin: 3.75rem 2.5rem;
-    border: 1px solid black;
   }
 
   .our-experience-section__container-left {
@@ -141,7 +139,6 @@
     justify-content: flex-start;
     align-items: center;
     margin: 3.1rem 1rem;
-    border: 1px solid black;
   }
 
   .our-experience-section__container-left {
