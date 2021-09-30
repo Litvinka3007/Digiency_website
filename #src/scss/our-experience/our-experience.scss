@@ -26,7 +26,7 @@
   margin-bottom: 1.5rem;
 }
 
-.about-us-section__title {
+.our-experience-section__title {
   margin-bottom: 1.1rem;
 }
 
@@ -67,7 +67,8 @@
   margin-bottom: 1.9rem;
 }
 
-.our-experience-section__item-number {
+.our-experience-section__item-number,
+.our-experience-section__plus-sign {
   font-size: $font-size-xxxl;
   font-weight: $bold-font-weight;
   color: $text-primary-color;
@@ -109,7 +110,8 @@
     height: 150px;
   }
 
-  .our-experience-section__item-number {
+  .our-experience-section__item-number,
+  .our-experience-section__plus-sign {
     font-size: $font-size-l;
     font-weight: $medium-font-weight;
   }
@@ -182,7 +184,8 @@
     height: 250px;
   }
 
-  .our-experience-section__item-number {
+  .our-experience-section__item-number,
+  .our-experience-section__plus-sign {
     font-size: $font-size-xxxl;
     font-weight: $bold-font-weight;
   }
