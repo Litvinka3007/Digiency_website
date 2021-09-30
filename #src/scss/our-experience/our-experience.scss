@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 3.75rem 8.4rem;
   border: 1px solid black;
@@ -78,4 +78,117 @@
   font-weight: $medium-font-weight;
   text-transform: capitalize;
   color: $text-secondary-color;
+}
+
+@media (max-width: 1200px) {
+  .our-experience-section__container {
+    margin: 3.75rem 2.5rem;
+    border: 1px solid black;
+  }
+
+  .our-experience-section__container-left {
+    margin-right: 1.5rem;
+  }
+
+  .our-experience-section__container-right {
+    width: 332px;
+    height: 340px;
+  }
+
+  .our-experience-section__container-right__block-left {
+    margin-right: 0.5rem;
+  }
+
+  .our-experience-section__item1,
+  .our-experience-section__item3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .our-experience-section__item {
+    width: 162px;
+    height: 150px;
+  }
+
+  .our-experience-section__item-number {
+    font-size: $font-size-l;
+    font-weight: $medium-font-weight;
+  }
+
+  .our-experience-section__item-achievement {
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+  }
+
+  .tablet-mobile-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .our-experience-section__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3.1rem 1rem 1.53rem 1rem;
+    border: 1px solid black;
+  }
+
+  .our-experience-section__container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 3.1rem 0;
+    padding: 0 0.7rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .our-experience-section__heading {
+    margin-bottom: 1.1rem;
+  }
+
+  .our-experience-section__text {
+    margin-bottom: 0.56rem;
+  }
+
+  .our-experience-section__container-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .our-experience-section__container-right__block-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .our-experience-section__container-right__block-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .our-experience-section__item {
+    @include block-white;
+    margin-bottom: 1.57rem;
+    width: 343px;
+    height: 250px;
+  }
+
+  .our-experience-section__item-number {
+    font-size: $font-size-xxxl;
+    font-weight: $bold-font-weight;
+  }
+
+  .our-experience-section__item-achievement {
+    font-size: $font-size-l;
+    font-weight: $medium-font-weight;
+  }
 }
