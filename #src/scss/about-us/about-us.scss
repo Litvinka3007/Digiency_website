@@ -34,10 +34,9 @@
 }
 
 .about-us-section__advantages {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  display: inline-flex;
+  gap: 30px;
+  justify-content: center;
   align-items: center;
   padding-left: 4.5rem;
 }
@@ -88,10 +87,9 @@
   }
 
   .about-us-section__advantages {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    display: inline-flex;
+    gap: 24px;
+    justify-content: center;
     align-items: center;
     padding: 0;
     max-width: 688px;
@@ -138,7 +136,7 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   .about-us-section__container {
     display: flex;
     flex-direction: column;
@@ -172,6 +170,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0;
     padding: 0;
   }
 
