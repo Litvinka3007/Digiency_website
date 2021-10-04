@@ -17,6 +17,7 @@
 }
 
 .team-member-section__member {
+  position: relative;
   @include block-white;
   margin-right: 30px;
   padding-bottom: 0.9rem;
@@ -41,6 +42,47 @@
   font-weight: $base-font-weight;
   text-transform: capitalize;
   color: $text-secondary-color;
+}
+
+.social-icons-gustavo,
+.social-icons-phillip,
+.social-icons-talan,
+.social-icons-abram {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 29px;
+  margin: 0;
+}
+
+.team-member-section__member-gustavo:hover .social-icons-gustavo,
+.team-member-section__member-phillip:hover .social-icons-phillip,
+.team-member-section__member-talan:hover .social-icons-talan,
+.team-member-section__member-abram:hover .social-icons-abram {
+  display: flex;
+}
+
+.social-icons__item:hover {
+  background-color: $color-red;
+}
+
+@media (max-width: 1230px) {
+  .social-icons-gustavo,
+  .social-icons-phillip,
+  .social-icons-talan,
+  .social-icons-abram {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 29px;
+  }
+
+  .team-member-section__member-gustavo:hover .social-icons-gustavo,
+  .team-member-section__member-phillip:hover .social-icons-phillip,
+  .team-member-section__member-talan:hover .social-icons-talan,
+  .team-member-section__member-abram:hover .social-icons-abram {
+    display: flex;
+  }
 }
 
 @media (max-width: 768px) {
