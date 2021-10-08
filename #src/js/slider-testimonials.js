@@ -15,25 +15,25 @@ $(document).ready(function() {
     touchThreshold: 10,
     touchMove: true,
     waitForAnimate: true,
-    centerMode: true,
+    centerMode: false,
+    centerPadding: '50px',
     variableWidth: false,
     mobileFirst: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          // dots: true,
-          // slidesToShow: 1,
-          // slidesToScroll: 1,
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       },
       {
         breakpoint: 480,
         settings: {
-          // dots: true,
-          // slidesToShow: 1,
-          // slidesToScroll: 1,
-          // centerMode: false,
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       }
     ]
