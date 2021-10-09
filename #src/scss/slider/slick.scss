@@ -55,6 +55,12 @@
   background-color: $color-grey-light;
 }
 
+#slick-slide-control10:hover,
+#slick-slide-control11:hover,
+#slick-slide-control12:hover {
+  background-color: $color-red;
+}
+
 /* Активная точка */
 .slider-testimonials .slick-dots li.slick-active button {
   width: 49px;
@@ -73,5 +79,3 @@
     margin-top: 1.56rem;
   }
 }
-
-/*Для flex-элемента указать ОБЯЗАТЕЛЬНО min-width: 0; если слайдер является flex-элементов или является его частью*/
