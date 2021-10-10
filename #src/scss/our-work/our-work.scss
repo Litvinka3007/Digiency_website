@@ -42,7 +42,7 @@
   }
 }
 
-.tabs__items a.active {
+.tabs__item-active {
   color: $color-orange;
 }
 
@@ -50,14 +50,7 @@
   display: none;
 }
 
-.tabs__block:target {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 370px 470px;
-  grid-gap: 30px;
-}
-
-.tabs__block.active {
+.tabs__block-active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 370px 470px;
@@ -127,7 +120,7 @@
     margin-bottom: 1.1rem;
   }
 
-  .tabs__block:target {
+  .tabs__block-active {
     grid-auto-rows: 230px 250px;
     grid-gap: 24px;
   }
@@ -166,7 +159,7 @@
     text-align: center;
   }
 
-  .tabs__block:target {
+  .tabs__block-active {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(370px, 370px) minmax(450px, auto) minmax(370px, 370px) minmax(450px, auto) minmax(370px, auto) minmax(450px, auto);
