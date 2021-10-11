@@ -56,6 +56,10 @@ body {
   font-weight: $section-text-font-weight;
 }
 
+.text-capitalized {
+  text-transform: capitalize;
+}
+
 @media (max-width: 768px) {
   .section__title {
     font-size: $titles-tablet-font-size;

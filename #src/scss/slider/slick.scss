@@ -79,3 +79,65 @@
     margin-top: 1.56rem;
   }
 }
+
+// ТРЕТИЙ СЛАЙДЕР (our-blog section)
+
+.slider-blog {
+  position: relative;
+}
+
+/* Точки (булиты) */
+.slider-blog .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.75rem;
+}
+
+.slider-blog .slick-dots li {
+  list-style: none;
+  margin: 0 2px;
+}
+
+/* Элемент точки */
+.slider-blog .slick-dots button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  background-color: $color-orange;
+}
+
+#slick-slide-control21 {
+  background-color: $color-grey-deep;
+}
+
+#slick-slide-control22 {
+  background-color: $color-grey-light;
+}
+
+#slick-slide-control20:hover,
+#slick-slide-control21:hover,
+#slick-slide-control22:hover {
+  background-color: $color-red;
+}
+
+/* Активная точка */
+.slider-blog .slick-dots li.slick-active button {
+  width: 49px;
+  height: 15px;
+  border-radius: 7.5px;
+}
+
+@media (max-width: 768px) {
+  .slider-blog .slick-dots {
+    margin-top: 3.75rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .slider-blog .slick-dots {
+    margin-top: 1.56rem;
+  }
+}
