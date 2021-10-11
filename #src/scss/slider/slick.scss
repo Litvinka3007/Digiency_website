@@ -1,3 +1,5 @@
+// ПЕРВЫЙ СЛАЙДЕР (Team-member section)
+
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
@@ -16,32 +18,64 @@
   text-align: center;
 }
 
+// ВТОРОЙ СЛАЙДЕР (Clients-feedback section)
+
+.slider-testimonials {
+  position: relative;
+}
+
 /* Точки (булиты) */
-//.slider .slick-dots {
-//  display: flex;
-//  align-items: center;
-//  justify-content: center;
-//}
-//
-//.slider .slick-dots li {
-//  list-style: none;
-//  margin: 0 5px;
-//}
+.slider-testimonials .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.1rem;
+}
+
+.slider-testimonials .slick-dots li {
+  list-style: none;
+  margin: 0 2px;
+}
 
 /* Элемент точки */
-//.slider .slick-dots button {
-//  width: 3px;
-//  height: 3px;
-//  border-radius: 50%;
-//  font-size: 0;
-//  background-color: #000000;
-//}
+.slider-testimonials .slick-dots button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  background-color: $color-orange;
+}
+
+#slick-slide-control11 {
+  background-color: $color-grey-deep;
+}
+
+#slick-slide-control12 {
+  background-color: $color-grey-light;
+}
+
+#slick-slide-control10:hover,
+#slick-slide-control11:hover,
+#slick-slide-control12:hover {
+  background-color: $color-red;
+}
 
 /* Активная точка */
-//.slider .slick-dots li.slick-active button{
-//  background-color: transparent;
-//  border: 1px solid #000000;
-//}
+.slider-testimonials .slick-dots li.slick-active button {
+  width: 49px;
+  height: 15px;
+  border-radius: 7.5px;
+}
 
+@media (max-width: 768px) {
+  .slider-testimonials .slick-dots {
+    margin-top: 3.75rem;
+  }
+}
 
-/*Для flex-элемента указать ОБЯЗАТЕЛЬНО min-width: 0; если слайдер является flex-элементов или является его частью*/
+@media (max-width: 376px) {
+  .slider-testimonials .slick-dots {
+    margin-top: 1.56rem;
+  }
+}
