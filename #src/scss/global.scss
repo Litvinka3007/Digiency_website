@@ -60,6 +60,10 @@ body {
   text-transform: capitalize;
 }
 
+.text-lowercased {
+  text-transform: lowercase;
+}
+
 @media (max-width: 768px) {
   .section__title {
     font-size: $titles-tablet-font-size;

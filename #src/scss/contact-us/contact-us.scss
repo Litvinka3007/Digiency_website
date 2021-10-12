@@ -1,0 +1,150 @@
+.contact-us-section__main-container {
+  background-color: $bg-secondary-color;
+}
+
+.contact-us-section__container {
+  margin: 7.5rem 8.4rem;
+}
+
+.contact-us-section__heading {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-us-section__title {
+  margin-bottom: 3.75rem;
+  text-align: center;
+}
+
+.contact-info__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  max-width: 1170px;
+}
+
+.contact-info__item {
+  @include block-white;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1.1rem;
+  width: 370px;
+  height: 230px;
+}
+
+.contact-info__item-heading {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 2.2rem;
+}
+
+.contact-info__item-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.1rem;
+  width: 75px;
+  height: 75px;
+  border: none;
+  border-radius: 50%;
+  background-color: $color-orange;
+}
+
+.contact-info__item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info__item-name {
+  color: $color-orange;
+  font-size: $font-size-l;
+  font-weight: $medium-font-weight;
+}
+
+.contact-info__item-call {
+  color: $text-primary-color;
+  font-size: $font-size-xl;
+  font-weight: $semi-bold-font-weight;
+  text-transform: capitalize;
+}
+
+.contact-info__item-contact {
+  color: $text-secondary-color;
+  font-size: $font-size-m;
+  font-weight: $medium-font-weight;
+}
+
+.contact-info__item-contact1 {
+  margin-bottom: 1.2rem;
+}
+
+.toll-info {
+  font-size: $font-size-m;
+  font-weight: $medium-font-weight;
+}
+
+// Responsive
+
+@media (max-width: 1125px) {
+  .contact-us-section__container {
+    margin: 7.5rem 2.5rem;
+  }
+
+  .contact-us-section__heading {
+    margin-bottom: 1.1rem;
+  }
+
+  .contact-info__items {
+    max-width: 687px;
+  }
+
+  .contact-info__item {
+    width: 213px;
+    height: 173px;
+  }
+
+  .contact-info__item-heading {
+    margin-bottom: 1.1rem;
+  }
+
+  .contact-info__item-image {
+    margin-right: 0.9rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-info__item-name {
+    font-size: $font-size-m;
+  }
+
+  .contact-info__item-call {
+    font-size: $font-size-l;
+    font-weight: $medium-font-weight;
+  }
+
+  .contact-info__item-contact {
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+  }
+
+  .contact-info__item-contact1 {
+    margin-bottom: 0.9rem;
+  }
+
+  .toll-info {
+    font-size: $font-size-xs;
+    font-weight: $base-font-weight;
+  }
+}
+
+@media (max-width: 710px) {
+  .contact-us-section__container {
+    margin: 3.1rem 1rem;
+  }
+
+  .contact-us-section__title {
+    margin-bottom: 1.1rem;
+  }
+}

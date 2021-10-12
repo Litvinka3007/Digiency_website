@@ -2,12 +2,18 @@
 
 /* Ограничивающая оболочка */
 .slick-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   overflow: hidden;
+  min-height: 315px;
 }
+
 /* Лента слайдов */
 .slick-track {
   display: flex;
   align-items: flex-start;
+  margin: 10px 0 0;
 }
 
 .slider {
@@ -16,6 +22,10 @@
 
 .slider-item {
   text-align: center;
+}
+
+.our-blog-section__blog-items-page {
+  transform: translateX(-18px);
 }
 
 // ВТОРОЙ СЛАЙДЕР (Clients-feedback section)

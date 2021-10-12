@@ -17,7 +17,7 @@ $(document).ready(function() {
     waitForAnimate: true,
     centerMode: false,
     centerPadding: '50px',
-    variableWidth: false,
+    variableWidth: true,
     mobileFirst: true,
     responsive: [
       {
@@ -25,7 +25,7 @@ $(document).ready(function() {
         settings: {
           dots: true,
           slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 1
         }
       },
       {
@@ -34,6 +34,8 @@ $(document).ready(function() {
           dots: true,
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerPadding: '0',
+          centerMode: true
         }
       }
     ]

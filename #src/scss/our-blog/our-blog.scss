@@ -35,7 +35,7 @@
 }
 
 .our-blog-section__blog-item1 {
-  margin-right: 1.87rem;
+  margin: 0 1.87rem;
 }
 
 .our-blog-section__blog-item-info {
@@ -117,10 +117,9 @@
   transform: translateY(8.5px);
 }
 
-
 // Responsive
 
-@media (max-width: 1125px) {
+@media (max-width: 1225px) {
   .our-blog-section__container {
     margin: 7.5rem 2.5rem;
   }
@@ -172,7 +171,7 @@
   }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 750px) {
   .our-blog-section__container {
     margin: 3.1rem 0 3.1rem 1rem;
   }
@@ -215,5 +214,10 @@
   .our-blog-section__blog-item-details-dot {
     margin: 0 0.3rem;
     transform: translateY(6px);
+  }
+
+  .our-blog-section__blog-items-page {
+    justify-content: space-between;
+    transform: translateX(-30px);
   }
 }
