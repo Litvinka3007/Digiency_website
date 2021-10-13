@@ -144,6 +144,16 @@
   .slider-blog .slick-dots {
     margin-top: 3.75rem;
   }
+
+  .slick-slide {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .slick-list {
+    margin-left: -10px;
+    width: calc(100% + 20px);
+  }
 }
 
 @media (max-width: 376px) {

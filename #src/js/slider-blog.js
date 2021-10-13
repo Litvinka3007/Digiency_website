@@ -16,7 +16,8 @@ $(document).ready(function() {
     touchMove: true,
     waitForAnimate: true,
     centerMode: false,
-    variableWidth: false,
+    centerPadding: '50px',
+    variableWidth: true,
     mobileFirst: true,
     responsive: [
       {

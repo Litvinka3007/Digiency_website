@@ -33,9 +33,7 @@ $(document).ready(function() {
         settings: {
           dots: true,
           slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: '0',
-          centerMode: true
+          slidesToScroll: 1
         }
       }
     ]
