@@ -28,14 +28,14 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 1.56rem;
-  width: 570px;
+  max-width: 570px;
   height: 294px;
   background-color: $bg-secondary-color;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .our-blog-section__blog-item1 {
-  margin: 0 1.87rem;
+  margin: 0 1.5rem;
 }
 
 .our-blog-section__blog-item-info {
