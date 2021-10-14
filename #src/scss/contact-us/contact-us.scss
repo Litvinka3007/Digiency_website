@@ -1,9 +1,11 @@
 .contact-us-section__main-container {
+  padding: 7.5rem 8.4rem;
   background-color: $bg-secondary-color;
 }
 
 .contact-us-section__container {
-  margin: 7.5rem 8.4rem;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .contact-us-section__heading {
@@ -22,7 +24,6 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   margin: 0 auto 3.75rem;
-  max-width: 1170px;
 }
 
 .contact-info__item {
@@ -97,11 +98,96 @@
   font-weight: $medium-font-weight;
 }
 
+.contact-form__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-form {
+  max-width: 670px;
+  width: 100%;
+}
+
+.contact-form__container-left {
+  width: 38%;
+}
+
+.contact-form__container-right {
+  width: 62%;
+}
+
+.contact-us-section__subtitle {
+  font-size: $font-size-xl;
+  font-weight: $semi-bold-font-weight;
+  text-transform: capitalize;
+  margin-bottom: 1.1rem;
+}
+
+.contact-form__client-data {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.8rem;
+}
+
+.contact-form__input-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.contact-form__input {
+  padding: 1.1rem;
+  border: none;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  background-color: $color-white;
+}
+
+.contact-form__input_name,
+.contact-form__input_email,
+.contact-form__input_tel,
+.contact-form__input_subject {
+  width: 330px;
+  height: 60px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $text-secondary-color;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+}
+
+.contact-form__input_name,
+.contact-form__input_email {
+  margin-bottom: 1.1rem;
+}
+
+.contact-form__text {
+  width: 670px;
+  height: 163px;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-form__message {
+  margin-bottom: 1.8rem;
+}
+
+.contact-form__button {
+  width: 190px;
+}
+
 // Responsive
 
 @media (max-width: 1160px) {
-  .contact-us-section__container {
-    margin: 7.5rem 2.5rem;
+  .contact-us-section__main-container {
+    padding: 7.5rem 2.5rem;
   }
 
   .contact-us-section__heading {
@@ -149,11 +235,42 @@
     font-size: $font-size-xs;
     font-weight: $base-font-weight;
   }
+
+  .contact-us-section__subtitle {
+    font-size: $font-size-l;
+    font-weight: $medium-font-weight;
+  }
+
+  .contact-form {
+    max-width: 390px;
+    width: 100%;
+  }
+
+  .contact-form__input_name,
+  .contact-form__input_email,
+  .contact-form__input_tel,
+  .contact-form__input_subject {
+    width: 185px;
+    height: 50px;
+  }
+
+  .contact-form__client-data {
+    margin-bottom: 1.1rem;
+  }
+
+  .contact-form__text {
+    width: 391px;
+    height: 109px;
+  }
+
+  .contact-form__message {
+    margin-bottom: 1.56rem;
+  }
 }
 
 @media (max-width: 750px) {
-  .contact-us-section__container {
-    margin: 3.1rem 1rem;
+  .contact-us-section__main-container {
+    padding: 3.1rem 1rem;
   }
 
   .contact-us-section__title {
@@ -209,5 +326,51 @@
   .toll-info {
     font-size: $font-size-m;
     font-weight: $medium-font-weight;
+  }
+
+  .contact-form__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form__container-left,
+  .contact-form__container-right {
+    width: 100%;
+  }
+
+  .contact-form__container-left {
+    margin-bottom: 3.1rem;
+  }
+
+  .contact-us-section__subtitle {
+    text-align: center;
+  }
+
+  .contact-form {
+    margin: auto;
+    max-width: 343px;
+    width: 100%;
+  }
+
+  .contact-form__input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form__input_name,
+  .contact-form__input_email,
+  .contact-form__input_tel,
+  .contact-form__input_subject {
+    width: 343px;
+    height: 60px;
+  }
+
+  .contact-form__input_tel {
+    margin-bottom: 1.1rem;
+  }
+
+  .contact-form__text {
+    width: 343px;
+    height: 163px;
   }
 }
