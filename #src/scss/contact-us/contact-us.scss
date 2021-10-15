@@ -104,6 +104,7 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3.75rem;
 }
 
 .contact-form {
@@ -181,6 +182,21 @@ textarea {
 
 .contact-form__button {
   width: 190px;
+}
+
+.map-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 // Responsive
