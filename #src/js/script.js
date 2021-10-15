@@ -3,3 +3,4 @@
 @@include('slider.js')
 @@include('slider-testimonials.js')
 @@include('slider-blog.js')
+@@include('init-map.js')
