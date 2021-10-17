@@ -1,8 +1,13 @@
+.about-us-section__main-container {
+  padding: 7rem 8.4rem 7rem 3.9rem;
+  background-color: $bg-secondary-color;
+}
+
 .about-us-section__container {
   display: flex;
   flex-direction: column;
-  padding: 7rem 8.4rem 7rem 3.9rem;
-  background-color: $bg-secondary-color;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .about-us-section__description {
@@ -76,11 +81,14 @@
 }
 
 @media (max-width: 1250px) {
+  .about-us-section__main-container {
+    padding: 7rem 2.5rem 7rem 2.5rem;
+  }
+
   .about-us-section__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7rem 2.5rem 7rem 2.5rem;
   }
 
   .about-us-section__advantages {
@@ -134,9 +142,7 @@
 }
 
 @media (max-width: 700px) {
-  .about-us-section__container {
-    display: flex;
-    flex-direction: column;
+  .about-us-section__main-container {
     padding: 3.1rem 1rem 1.54rem 1rem;
   }
 
