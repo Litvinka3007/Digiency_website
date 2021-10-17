@@ -1,11 +1,13 @@
 .about-us-section__main-container {
+  padding: 7rem 8.4rem 7rem 3.9rem;
   background-color: $bg-secondary-color;
 }
 
 .about-us-section__container {
   display: flex;
   flex-direction: column;
-  margin: 7rem 8.4rem 7rem 3.9rem;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .about-us-section__description {
@@ -34,10 +36,9 @@
 }
 
 .about-us-section__advantages {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  display: inline-flex;
+  gap: 30px;
+  justify-content: center;
   align-items: center;
   padding-left: 4.5rem;
 }
@@ -75,18 +76,20 @@
 }
 
 @media (max-width: 1250px) {
+  .about-us-section__main-container {
+    padding: 7rem 2.5rem 7rem 2.5rem;
+  }
+
   .about-us-section__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 7rem 2.5rem 7rem 2.5rem;
   }
 
   .about-us-section__advantages {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    display: inline-flex;
+    gap: 24px;
+    justify-content: center;
     align-items: center;
     padding: 0;
     max-width: 688px;
@@ -133,11 +136,9 @@
   }
 }
 
-@media (max-width: 650px) {
-  .about-us-section__container {
-    display: flex;
-    flex-direction: column;
-    margin: 3.1rem 1rem 1.54rem 1rem;
+@media (max-width: 700px) {
+  .about-us-section__main-container {
+    padding: 3.1rem 1rem 1.54rem 1rem;
   }
 
   .about-us-section__description {
@@ -167,6 +168,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0;
     padding: 0;
   }
 
