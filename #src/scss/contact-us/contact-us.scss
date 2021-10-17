@@ -1,5 +1,5 @@
 .contact-us-section__main-container {
-  padding: 7.5rem 8.4rem;
+  padding: 0 8.4rem 7.5rem 8.4rem;
   background-color: $bg-secondary-color;
 }
 
@@ -222,7 +222,7 @@ textarea {
 
 @media (max-width: 1160px) {
   .contact-us-section__main-container {
-    padding: 7.5rem 2.5rem;
+    padding: 0 2.5rem 7.5rem 2.5rem;
   }
 
   .contact-us-section__heading {
@@ -314,7 +314,7 @@ textarea {
 
 @media (max-width: 750px) {
   .contact-us-section__main-container {
-    padding: 3.1rem 1rem;
+    padding: 0 1rem 3.1rem 1rem;
   }
 
   .contact-us-section__title {
