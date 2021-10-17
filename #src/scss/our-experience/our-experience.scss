@@ -1,6 +1,6 @@
 .our-experience-section__main-container {
+  padding: 3.75rem 8.4rem;
   background-color: $bg-primary-color;
-  border: 1px solid $bg-primary-color; // Если убрать границу, пропадает заливка над и под контентом
 }
 
 .our-experience-section__container {
@@ -9,7 +9,8 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin: 3.75rem 8.4rem;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .our-experience-section__container-left {
@@ -87,8 +88,8 @@
 }
 
 @media (max-width: 1200px) {
-  .our-experience-section__container {
-    margin: 3.75rem 2.5rem;
+  .our-experience-section__main-container {
+    padding: 3.75rem 2.5rem;
   }
 
   .our-experience-section__container-left {
@@ -133,12 +134,15 @@
 }
 
 @media (max-width: 750px) {
+  .our-experience-section__main-container {
+    padding: 3.1rem 1rem;
+  }
+
   .our-experience-section__container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 3.1rem 1rem;
   }
 
   .our-experience-section__container-left {
