@@ -1,10 +1,11 @@
 .clients-feedback-section__main-container {
+  padding: 3.75rem 8.4rem;
   background-color: $bg-primary-color;
-  border: 1px solid $bg-primary-color;
 }
 
 .clients-feedback-section__container {
-  margin: 3.75rem 8.4rem;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .clients-feedback-section__heading {
@@ -74,8 +75,8 @@
 }
 
 @media (max-width: 1010px) {
-  .clients-feedback-section__container {
-    margin: 3.75rem 2.5rem;
+  .clients-feedback-section__main-container {
+    padding: 3.75rem 2.5rem;
   }
 
   .clients-feedback-section__client {
@@ -103,8 +104,8 @@
 }
 
 @media (max-width: 700px) {
-  .clients-feedback-section__container {
-    margin: 3.1rem 0 3.1rem 1rem;
+  .clients-feedback-section__main-container {
+    padding: 3.1rem 0 3.1rem 1rem;
   }
 
   .clients-feedback-section__clients-testimonials-page {
