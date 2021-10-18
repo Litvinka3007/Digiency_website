@@ -1,9 +1,13 @@
+.hero-section__main-container {
+  padding: 6rem 0 6rem 8.4rem;
+  background-color: $bg-primary-color;
+}
+
 .hero-section__container {
   display: flex;
   flex-wrap: nowrap;
+  margin: auto;
   width: 100%;
-  padding: 6rem 0 6rem 8.4rem;
-  background-color: $bg-primary-color;
 }
 
 .hero-section__container-left {
@@ -17,7 +21,7 @@
 .hero-section__container-right {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-left: 2rem;
   width: 58%;
 }
@@ -78,8 +82,9 @@
 // Responsive
 
 @media (max-width: 1230px) {
-  .hero-section__container {
+  .hero-section__main-container {
     padding: 4.5rem 0 4.5rem 2.5rem;
+    background-color: $bg-primary-color;
   }
 
   .hero-section__container-left {
@@ -134,13 +139,16 @@
 }
 
 @media (max-width: 700px) {
+  .hero-section__main-container {
+    padding: 3rem 1.25rem;
+  }
+
   .hero-section__container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 3rem 1.25rem;
   }
 
   .hero-section__container-left {
