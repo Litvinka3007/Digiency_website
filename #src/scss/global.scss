@@ -63,6 +63,28 @@ body {
   text-transform: lowercase;
 }
 
+.social-icons__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+.fb-icon {
+  background-color: $color-orange;
+  box-shadow: 4px 5px 15px rgba(255, 83, 0, 0.4);
+}
+
+.instagram-icon,
+.twitter-icon,
+.skype-icon {
+  margin-top: 5px;
+  background-color: $header-bg-color;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
   .section__title {
     font-size: $titles-tablet-font-size;

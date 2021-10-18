@@ -15,7 +15,7 @@ $color-red: #FF0000FF;
 // PRIMARY COLORS
 
 $bg-primary-color: $color-orange-light;
-$header-bg-color: $color-white; // Заменить $header-bg-color на $bg-secondary-color
+$header-bg-color: $color-white; // Заменить в header.scss $header-bg-color на $bg-secondary-color и удалить строку
 $button-primary-color: $color-orange;
 $text-primary-color: $color-grey-deep;
 
@@ -60,6 +60,14 @@ $header-font-weight-tablet: $normal-font-weight;
 $header-hight-desktop: 6.25rem;
 $header-hight-tablet: 5rem;
 $header-hight-mobile: 3rem;
+
+// Footer
+
+$footer-bg-primary-color: $color-grey-deep;
+$footer-bg-secondary-color: $color-orange;
+$footer-base-font-size: $base-font-size;
+$footer-base-font-weight: $base-font-weight;
+$footer-base-text-color: $color-white;
 
 // OTHER
 
