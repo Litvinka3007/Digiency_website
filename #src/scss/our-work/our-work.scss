@@ -1,9 +1,11 @@
 .our-work-section__main-container {
+  padding: 0 8.4rem 7.5rem 8.4rem;
   background-color: $bg-secondary-color;
 }
 
 .our-work-section__container {
-  margin: 7.5rem 8.4rem;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .our-work-section__heading {
@@ -14,10 +16,6 @@
 .our-work-section__title {
   margin-bottom: 1.5rem;
   text-align: center;
-}
-
-.tabs {
-  max-width: 1170px;
 }
 
 .tabs__items {
@@ -112,8 +110,8 @@
 }
 
 @media (max-width: 1220px) {
-  .our-work-section__container {
-    margin: 7.5rem 2.5rem;
+  .our-work-section__main-container {
+    padding: 0 2.5rem 7.5rem 2.5rem;
   }
 
   .our-work-section__heading {
@@ -144,8 +142,8 @@
 }
 
 @media (max-width: 576px) {
-  .our-work-section__container {
-    margin: 3.1rem 1rem;
+  .our-work-section__main-container {
+    padding: 0 1rem 3.1rem 1rem;
   }
 
   .tabs__items {
