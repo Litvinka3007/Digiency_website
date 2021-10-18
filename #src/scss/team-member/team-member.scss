@@ -1,9 +1,11 @@
 .team-member-section__main-container {
+  padding: 7.5rem 8.4rem;
   background-color: $bg-secondary-color;
 }
 
 .team-member-section__container {
-  margin: 7.5rem 8.4rem;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .team-member-section__heading {
@@ -86,8 +88,8 @@
 }
 
 @media (max-width: 768px) {
-  .team-member-section__container {
-    margin: 7.5rem 2.5rem;
+  .team-member-section__main-container {
+    padding: 7.5rem 2.5rem;
   }
 
   .team-member-section__heading {
@@ -103,8 +105,8 @@
 }
 
 @media (max-width: 376px) {
-  .team-member-section__container {
-    margin: 3.1rem 0 3.1rem 1rem;
+  .team-member-section__main-container {
+    padding: 3.1rem 0 3.1rem 1rem;
   }
 
   .team-member-section__title {
