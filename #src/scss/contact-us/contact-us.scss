@@ -155,13 +155,6 @@
   height: 60px;
 }
 
-input::placeholder,
-textarea::placeholder {
-  color: $text-secondary-color;
-  font-size: $base-font-size;
-  font-weight: $base-font-weight;
-}
-
 .contact-form__input_name,
 .contact-form__input_email {
   margin-bottom: 1.1rem;

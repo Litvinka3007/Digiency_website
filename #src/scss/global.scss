@@ -35,6 +35,13 @@ body {
   color: $color-orange;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: $text-secondary-color;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+}
+
 .section__heading {
   color: $headings-color;
   font-size: $headings-font-size;
