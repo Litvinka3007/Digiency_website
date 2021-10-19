@@ -15,7 +15,6 @@ $color-red: #FF0000FF;
 // PRIMARY COLORS
 
 $bg-primary-color: $color-orange-light;
-$header-bg-color: $color-white; // Заменить в header.scss $header-bg-color на $bg-secondary-color и удалить строку
 $button-primary-color: $color-orange;
 $text-primary-color: $color-grey-deep;
 
@@ -51,6 +50,12 @@ $base-font-weight: $normal-font-weight;
 // SPECIAL FONTS, SIZES AND COLORS
 
 // Header
+
+$header-bg-color-light: $color-white;
+$header-bg-color-dark: $color-grey-middle;
+
+$header-color-light: $color-grey-deep;
+$header-color-dark: $color-white;
 
 $header-font-size-desktop: $font-size-m;
 $header-font-weight-desktop: $medium-font-weight;

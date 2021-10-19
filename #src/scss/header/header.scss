@@ -2,7 +2,11 @@
   padding: 0 8.4rem;
   width: 100%;
   height: $header-hight-desktop;
-  background-color: $header-bg-color;
+  background-color: $header-bg-color-light;
+}
+
+.dark .navbar {
+  background-color: $header-bg-color-dark;
 }
 
 .navbar-nav {
@@ -16,6 +20,11 @@
 .nav-link {
   font-size: $header-font-size-desktop;
   font-weight: $header-font-weight-desktop;
+  color: $header-color-light;
+}
+
+.dark .nav-item .nav-link {
+  color: $header-color-dark;
 }
 
 .navbar-light .navbar-toggler {

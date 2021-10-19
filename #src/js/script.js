@@ -5,3 +5,4 @@
 @@include('slider-blog.js')
 @@include('init-map.js')
 @@include('to-top-button.js')
+@@include('switch-theme.js')
