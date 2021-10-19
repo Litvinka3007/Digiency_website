@@ -4,3 +4,4 @@
 @@include('slider-testimonials.js')
 @@include('slider-blog.js')
 @@include('init-map.js')
+@@include('to-top-button.js')
