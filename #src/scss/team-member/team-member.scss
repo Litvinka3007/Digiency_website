@@ -3,6 +3,10 @@
   background-color: $bg-secondary-color;
 }
 
+body.dark .team-member-section__main-container {
+  background-color: $bg-secondary-color-dark;
+}
+
 .team-member-section__container {
   max-width: 1440px;
   margin: auto;
@@ -28,6 +32,10 @@
   text-align: center;
 }
 
+body.dark .team-member-section__member {
+  @include block-deep-black;
+}
+
 .team-member-section__photo {
   margin-bottom: 1.5rem;
 }
@@ -36,7 +44,11 @@
   margin-bottom: 0.75rem;
   font-size: $font-size-m;
   font-weight: $medium-font-weight;
-  color: $color-deep-black;
+  color: $text-names-color;
+}
+
+body.dark .team-member-section__name {
+  color: $text-names-color-dark;
 }
 
 .team-member-section__position {

@@ -3,6 +3,10 @@
   background-color: $bg-primary-color;
 }
 
+body.dark .our-experience-section__main-container {
+  background-color: $bg-primary-color-dark;
+}
+
 .our-experience-section__container {
   display: flex;
   flex-direction: row;
@@ -51,6 +55,10 @@
   margin: 1.88rem;
   width: 270px;
   height: 250px;
+}
+
+body.dark .our-experience-section__item {
+  @include block-black;
 }
 
 .our-experience-section__item1 {

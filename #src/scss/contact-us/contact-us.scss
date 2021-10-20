@@ -3,6 +3,10 @@
   background-color: $bg-secondary-color;
 }
 
+body.dark .contact-us-section__main-container {
+  background-color: $bg-secondary-color-dark;
+}
+
 .contact-us-section__container {
   max-width: 1440px;
   margin: auto;
@@ -39,6 +43,12 @@
       box-shadow: 4px 5px 15px rgba(255, 83, 0, 0.4);
     }
   }
+}
+
+body.dark .contact-info__item {
+  @include block-deep-black;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .contact-info__item-heading {
@@ -125,6 +135,10 @@
   font-weight: $semi-bold-font-weight;
   text-transform: capitalize;
   margin-bottom: 1.1rem;
+}
+
+body.dark .contact-us-section__subtitle {
+ color: $titles-color-dark;
 }
 
 .contact-form__client-data {

@@ -3,6 +3,10 @@
   background-color: $bg-secondary-color;
 }
 
+body.dark .our-work-section__main-container {
+  background-color: $bg-secondary-color-dark;
+}
+
 .our-work-section__container {
   max-width: 1440px;
   margin: auto;

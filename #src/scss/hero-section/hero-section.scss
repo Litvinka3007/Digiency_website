@@ -3,6 +3,10 @@
   background-color: $bg-primary-color;
 }
 
+body.dark .hero-section__main-container {
+  background-color: $bg-primary-color-dark;
+}
+
 .hero-section__container {
   display: flex;
   flex-wrap: nowrap;
@@ -33,12 +37,20 @@
   line-height: 3.7rem;
 }
 
+body.dark .hero-section__heading {
+  color: $text-primary-color-dark;
+}
+
 .hero-section__subheading {
   margin: 0.7rem 0 3rem 0;
   color: $text-secondary-color;
   font-size: $base-font-size;
   font-weight: $base-font-weight;
   line-height: 1.5rem;
+}
+
+body.dark .hero-section__subheading {
+  color: $text-secondary-color-dark;
 }
 
 .hero-section__main-image {
@@ -57,34 +69,11 @@
   height: 175px;
 }
 
-//.social-icons__item {
-//  display: flex;
-//  align-items: center;
-//  justify-content: center;
-//  width: 40px;
-//  height: 40px;
-//  border: none;
-//}
-//
-//.fb-icon {
-//  background-color: $color-orange;
-//  box-shadow: 4px 5px 15px rgba(255, 83, 0, 0.4);
-//}
-//
-//.instagram-icon,
-//.twitter-icon,
-//.skype-icon {
-//  margin-top: 5px;
-//  background-color: $header-bg-color;
-//  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-//}
-
 // Responsive
 
 @media (max-width: 1230px) {
   .hero-section__main-container {
     padding: 4.5rem 0 4.5rem 2.5rem;
-    background-color: $bg-primary-color;
   }
 
   .hero-section__container-left {

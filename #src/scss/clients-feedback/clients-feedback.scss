@@ -3,6 +3,10 @@
   background-color: $bg-primary-color;
 }
 
+body.dark .clients-feedback-section__main-container {
+  background-color: $bg-primary-color-dark;
+}
+
 .clients-feedback-section__container {
   max-width: 1440px;
   margin: auto;

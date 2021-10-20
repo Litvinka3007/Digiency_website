@@ -23,6 +23,7 @@ $text-primary-color: $color-grey-deep;
 $bg-secondary-color: $color-white;
 $text-secondary-color: $color-grey-light;
 $text-third-color: $color-white;
+$text-names-color: $color-deep-black;
 
 // GLOBAL FONTS
 
@@ -80,6 +81,10 @@ $footer-base-text-color: $color-white;
 $button-primary-font-size: $font-size-m;
 $button-primary-font-weight: $medium-font-weight;
 
+// Blocks
+$blocks-bg-primary-color: $color-white;
+$blocks-bg-secondary-color: $color-white;
+
 // Headings
 $headings-color: $text-secondary-color;
 $headings-font-size: $base-font-size;
@@ -97,3 +102,18 @@ $titles-mobile-font-weight: $medium-font-weight;
 $section-text-color: $text-secondary-color;
 $section-text-font-size: $base-font-size;
 $section-text-font-weight: $base-font-weight;
+
+// DARK MODE
+
+$bg-primary-color-dark: $color-black;
+$bg-secondary-color-dark: $color-grey-dark;
+$blocks-bg-primary-color-dark: $color-black;
+$blocks-bg-secondary-color-dark: $color-grey-middle;
+$text-primary-color-dark: $color-white;
+$text-secondary-color-dark: $color-white;
+$text-names-color-dark: $color-white;
+$headings-color-dark: $color-white;
+$titles-color-dark: $color-white;
+$section-text-color-dark: $color-white;
+
+

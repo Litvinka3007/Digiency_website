@@ -3,6 +3,10 @@
   background-color: $bg-secondary-color;
 }
 
+body.dark .brands-section__main-container {
+  background-color: $bg-secondary-color-dark;
+}
+
 .brands-section__container {
   display: flex;
   flex-direction: row;

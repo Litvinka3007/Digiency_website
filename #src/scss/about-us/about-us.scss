@@ -3,6 +3,10 @@
   background-color: $bg-secondary-color;
 }
 
+body.dark .about-us-section__main-container {
+  background-color: $bg-secondary-color-dark;
+}
+
 .about-us-section__container {
   display: flex;
   flex-direction: column;
@@ -48,6 +52,10 @@
   padding: 1.5rem 1.5rem 1.3rem 1.5rem;
   width: 270px;
   height: 200px;
+}
+
+body.dark .about-us-section__advantages-item {
+  @include block-deep-black;
 }
 
 .about-us-section__advantages-icon {
