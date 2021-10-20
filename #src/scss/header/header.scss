@@ -17,14 +17,22 @@
   margin-right: 4.8rem;
 }
 
-.nav-link {
+.navbar-light .navbar-nav .nav-link {
   font-size: $header-font-size-desktop;
   font-weight: $header-font-weight-desktop;
   color: $header-color-light;
+
+  &:hover {
+    color: $color-orange;
+  }
 }
 
-.dark .nav-item .nav-link {
+.dark .navbar-light .navbar-nav .nav-link {
   color: $header-color-dark;
+
+  &:hover {
+    color: $color-orange;
+  }
 }
 
 .navbar-light .navbar-toggler {
@@ -61,9 +69,8 @@
   }
 }
 
-@media (max-width: 768px) { // IPad
+@media (max-width: 768px) {
   .navbar {
-    //width: 768px;
     height: $header-hight-tablet;
   }
 
@@ -77,10 +84,9 @@
   }
 }
 
-@media (max-width: 376px) { // Mobile
+@media (max-width: 376px) {
   .navbar {
     padding: 0 0.9rem;
-    //width: 376px;
     height: $header-hight-mobile;
   }
 
