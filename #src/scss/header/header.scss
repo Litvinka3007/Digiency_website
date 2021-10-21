@@ -2,11 +2,7 @@
   padding: 0 8.4rem;
   width: 100%;
   height: $header-hight-desktop;
-  background-color: $header-bg-color-light;
-}
-
-.dark .navbar {
-  background-color: $header-bg-color-dark;
+  background-color: $header-bg-color;
 }
 
 .navbar-nav {
@@ -20,15 +16,7 @@
 .navbar-light .navbar-nav .nav-link {
   font-size: $header-font-size-desktop;
   font-weight: $header-font-weight-desktop;
-  color: $header-color-light;
-
-  &:hover {
-    color: $color-orange;
-  }
-}
-
-.dark .navbar-light .navbar-nav .nav-link {
-  color: $header-color-dark;
+  color: $header-text-color;
 
   &:hover {
     color: $color-orange;

@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
           end = +item.dataset.max;
       if (window.pageYOffset > numberTop - window.innerHeight / 2) {
         this.removeEventListener("scroll", onScroll);
-        var interval = setInterval(function () {
+        let interval = setInterval(function () {
           item.innerHTML = ++start;
           if (start === end) {
             clearInterval(interval);
           }
-        }, 30);
+        }, 200);
       }
     });
   });

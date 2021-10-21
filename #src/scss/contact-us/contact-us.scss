@@ -1,171 +1,172 @@
 .contact-us-section__main-container {
   padding: 0 8.4rem 7.5rem 8.4rem;
   background-color: $bg-secondary-color;
-}
 
-body.dark .contact-us-section__main-container {
-  background-color: $bg-secondary-color-dark;
-}
+  .contact-us-section__container {
+    max-width: 1440px;
+    margin: auto;
 
-.contact-us-section__container {
-  max-width: 1440px;
-  margin: auto;
-}
+    .contact-us-section__heading {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
 
-.contact-us-section__heading {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
+    .contact-us-section__title {
+      margin-bottom: 3.75rem;
+      text-align: center;
+    }
 
-.contact-us-section__title {
-  margin-bottom: 3.75rem;
-  text-align: center;
-}
+    .contact-info__items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin: 0 auto 3.75rem;
 
-.contact-info__items {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin: 0 auto 3.75rem;
-}
+      .contact-info__item {
+        @include block;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1.1rem 0 1.1rem 1.1rem;
+        max-width: 370px;
+        width: 100%;
+        height: 230px;
+        background-color: $blocks-bg-primary-color;
+        &:hover {
+          .contact-info__item-image {
+            box-shadow: 4px 5px 15px rgba(255, 83, 0, 0.4);
+          }
+        }
 
-.contact-info__item {
-  @include block-white;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 1.1rem 0 1.1rem 1.1rem;
-  max-width: 370px;
-  width: 100%;
-  height: 230px;
-  &:hover {
-    .contact-info__item-image {
-      box-shadow: 4px 5px 15px rgba(255, 83, 0, 0.4);
+        &-heading {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          margin-bottom: 2.2rem;
+
+          .contact-info__item-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1.1rem;
+            width: 75px;
+            height: 75px;
+            border: none;
+            border-radius: 50%;
+            background-color: $color-orange;
+          }
+
+          .contact-info__item-text {
+            display: flex;
+            flex-direction: column;
+
+            .contact-info__item-name {
+              color: $color-orange;
+              font-size: $font-size-l;
+              font-weight: $medium-font-weight;
+            }
+
+            .contact-info__item-call {
+              color: $text-primary-color;
+              font-size: $font-size-xl;
+              font-weight: $semi-bold-font-weight;
+              text-transform: capitalize;
+            }
+          }
+        }
+
+        &-contact {
+          color: $text-secondary-color;
+          font-size: $font-size-m;
+          font-weight: $medium-font-weight;
+
+          a {
+            text-decoration: none;
+            color: $text-secondary-color;
+          }
+        }
+
+        &-contact1 {
+          margin-bottom: 1.2rem;
+
+          .toll-info {
+            font-size: $font-size-m;
+            font-weight: $medium-font-weight;
+          }
+        }
+      }
+    }
+
+    .contact-form__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3.75rem;
+
+      &-left {
+        width: 38%;
+      }
+
+      &-right {
+        width: 62%;
+
+        .contact-us-section__subtitle {
+          font-size: $font-size-xl;
+          font-weight: $semi-bold-font-weight;
+          text-transform: capitalize;
+          margin-bottom: 1.1rem;
+        }
+
+        .contact-form {
+          max-width: 670px;
+          width: 100%;
+
+          &__client-data {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.8rem;
+          }
+
+          &__input-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin-bottom: 1.8rem;
+
+            .contact-form__input {
+              padding: 1.1rem;
+              width: 670px;
+              height: 163px;
+              border: none;
+              box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+              background-color: $blocks-bg-primary-color;
+            }
+          }
+
+          &__button {
+            width: 190px;
+          }
+        }
+      }
+    }
+
+    .map-responsive {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
     }
   }
-}
-
-body.dark .contact-info__item {
-  @include block-deep-black;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.contact-info__item-heading {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin-bottom: 2.2rem;
-}
-
-.contact-info__item-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1.1rem;
-  width: 75px;
-  height: 75px;
-  border: none;
-  border-radius: 50%;
-  background-color: $color-orange;
-}
-
-.contact-info__item-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-info__item-name {
-  color: $color-orange;
-  font-size: $font-size-l;
-  font-weight: $medium-font-weight;
-}
-
-.contact-info__item-call {
-  color: $text-primary-color;
-  font-size: $font-size-xl;
-  font-weight: $semi-bold-font-weight;
-  text-transform: capitalize;
-}
-
-.contact-info__item-contact {
-  color: $text-secondary-color;
-  font-size: $font-size-m;
-  font-weight: $medium-font-weight;
-
-    a {
-      text-decoration: none;
-      color: $text-secondary-color;
-    }
-}
-
-.contact-info__item-contact1 {
-  margin-bottom: 1.2rem;
-}
-
-.toll-info {
-  font-size: $font-size-m;
-  font-weight: $medium-font-weight;
-}
-
-.contact-form__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 3.75rem;
-}
-
-.contact-form {
-  max-width: 670px;
-  width: 100%;
-}
-
-.contact-form__container-left {
-  width: 38%;
-}
-
-.contact-form__container-right {
-  width: 62%;
-}
-
-.contact-us-section__subtitle {
-  font-size: $font-size-xl;
-  font-weight: $semi-bold-font-weight;
-  text-transform: capitalize;
-  margin-bottom: 1.1rem;
-}
-
-body.dark .contact-us-section__subtitle {
- color: $titles-color-dark;
-}
-
-.contact-form__client-data {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.8rem;
-}
-
-.contact-form__input-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.contact-form__input {
-  padding: 1.1rem;
-  border: none;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-  background-color: $color-white;
 }
 
 .contact-form__input_name,
 .contact-form__input_email,
 .contact-form__input_tel,
 .contact-form__input_subject {
-  width: 330px;
+  width: 265px;
   height: 60px;
 }
 
@@ -174,37 +175,17 @@ body.dark .contact-us-section__subtitle {
   margin-bottom: 1.1rem;
 }
 
-.contact-form__text {
-  width: 670px;
-  height: 163px;
-}
-
 textarea {
   resize: none;
 }
 
-.contact-form__message {
-  margin-bottom: 1.8rem;
-}
-
-.contact-form__button {
-  width: 190px;
-}
-
-.map-responsive {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-
-.map-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+//.map-responsive iframe {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//}
 
 // Responsive
 @media (min-width: 1160px) {
@@ -230,71 +211,84 @@ textarea {
 @media (max-width: 1160px) {
   .contact-us-section__main-container {
     padding: 0 2.5rem 7.5rem 2.5rem;
-  }
 
-  .contact-us-section__heading {
-    margin-bottom: 1.1rem;
-  }
-
-  .contact-info__item {
-    max-width: 213px;
-    width: 100%;
-    height: 173px;
-  }
-
-  .contact-info__item-heading {
-    margin-bottom: 1.1rem;
-  }
-
-  .contact-info__item-image {
-    margin-right: 0.9rem;
-    width: 40px;
-    height: 40px;
-
-    img {
-      max-width: 50%;
+    .contact-us-section__heading {
+      margin-bottom: 1.1rem;
     }
-  }
 
-  .contact-info__item-name {
-    font-size: $font-size-m;
-  }
+    .contact-info__item {
+      max-width: 213px;
+      width: 100%;
+      height: 173px;
 
-  .contact-info__item-call {
-    font-size: $font-size-l;
-    font-weight: $medium-font-weight;
-  }
+      &-heading {
+        margin-bottom: 1.1rem;
 
-  .contact-info__item-contact {
-    font-size: $base-font-size;
-    font-weight: $base-font-weight;
-  }
+        .contact-info__item-image {
+          margin-right: 0.9rem;
+          width: 40px;
+          height: 40px;
 
-  .contact-info__item-contact1 {
-    margin-bottom: 0.9rem;
-  }
+          img {
+            max-width: 50%;
+          }
+        }
 
-  .toll-info {
-    font-size: $font-size-xs;
-    font-weight: $base-font-weight;
-  }
+        .contact-info__item-name {
+          font-size: $font-size-m;
+        }
 
-  .contact-form__container-left {
-    width: 45%;
-  }
+        .contact-info__item-call {
+          font-size: $font-size-l;
+          font-weight: $medium-font-weight;
+        }
+      }
 
-  .contact-form__container-right {
-    width: 55%;
-  }
+      &-contact {
+        font-size: $base-font-size;
+        font-weight: $base-font-weight;
+      }
 
-  .contact-us-section__subtitle {
-    font-size: $font-size-l;
-    font-weight: $medium-font-weight;
-  }
+      &-contact1 {
+        margin-bottom: 0.9rem;
 
-  .contact-form {
-    max-width: 390px;
-    width: 100%;
+        .toll-info {
+          font-size: $font-size-xs;
+          font-weight: $base-font-weight;
+        }
+      }
+    }
+
+    .contact-form__container-left {
+      width: 45%;
+    }
+
+    .contact-form__container-right {
+      width: 55%;
+
+      .contact-us-section__subtitle {
+        font-size: $font-size-l;
+        font-weight: $medium-font-weight;
+      }
+
+      .contact-form {
+        max-width: 390px;
+        width: 100%;
+
+        &__client-data {
+          margin-bottom: 1.1rem;
+        }
+
+        &__message {
+          margin-bottom: 1.56rem;
+
+          .contact-form__text {
+            width: 391px;
+            height: 109px;
+          }
+        }
+      }
+    }
   }
 
   .contact-form__input_name,
@@ -304,108 +298,104 @@ textarea {
     width: 185px;
     height: 50px;
   }
-
-  .contact-form__client-data {
-    margin-bottom: 1.1rem;
-  }
-
-  .contact-form__text {
-    width: 391px;
-    height: 109px;
-  }
-
-  .contact-form__message {
-    margin-bottom: 1.56rem;
-  }
 }
 
 @media (max-width: 750px) {
   .contact-us-section__main-container {
     padding: 0 1rem 3.1rem 1rem;
-  }
 
-  .contact-us-section__title {
-    margin-bottom: 1.1rem;
-  }
+    .contact-us-section__title {
+      margin-bottom: 1.1rem;
+    }
 
-  .contact-info__item-heading {
-    margin-bottom: 2.1rem;
-  }
+    .contact-info__items {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
 
-  .contact-info__items {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
+      .contact-info__item {
+        margin-bottom: 1.56rem;
+        max-width: 343px;
+        width: 100%;
+        height: 224px;
 
-  .contact-info__item {
-    margin-bottom: 1.56rem;
-    max-width: 343px;
-    width: 100%;
-    height: 224px;
-  }
+        &:last-of-type {
+          margin-bottom: 0;
+        }
 
-  .contact-info__item:last-of-type {
-    margin-bottom: 0;
-  }
+        &-heading {
+          margin-bottom: 2.1rem;
 
-  .contact-info__item-image {
-    margin-right: 1.1rem;
-    width: 75px;
-    height: 75px;
-  }
+          .contact-info__item-image {
+            margin-right: 1.1rem;
+            width: 75px;
+            height: 75px;
+          }
 
-  .contact-info__item-name {
-    font-size: $font-size-l;
-  }
+          .contact-info__item-name {
+            font-size: $font-size-l;
+          }
 
-  .contact-info__item-call {
-    font-size: $font-size-xl;
-    font-weight: $semi-bold-font-weight;
-  }
+          .contact-info__item-call {
+            font-size: $font-size-xl;
+            font-weight: $semi-bold-font-weight;
+          }
+        }
 
-  .contact-info__item-contact {
-    font-size: $font-size-m;
-    font-weight: $medium-font-weight;
-  }
+        &-contact {
+          font-size: $font-size-m;
+          font-weight: $medium-font-weight;
+        }
 
-  .contact-info__item-contact1 {
-    margin-bottom: 0.6rem;
-  }
+        &-contact1 {
+          margin-bottom: 0.6rem;
 
-  .toll-info {
-    font-size: $font-size-m;
-    font-weight: $medium-font-weight;
-  }
+          .toll-info {
+            font-size: $font-size-m;
+            font-weight: $medium-font-weight;
+          }
+        }
+      }
+    }
 
-  .contact-form__container {
-    display: flex;
-    flex-direction: column;
+    .contact-form__container {
+      display: flex;
+      flex-direction: column;
+
+      &-left {
+        margin-bottom: 3.1rem;
+      }
+
+      .contact-us-section__subtitle {
+        text-align: center;
+      }
+
+      .contact-form {
+        margin: auto;
+        max-width: 343px;
+        width: 100%;
+
+        &__input-wrapper {
+          display: flex;
+          flex-direction: column;
+
+          .contact-form__input_tel {
+            margin-bottom: 1.1rem;
+          }
+
+          .contact-form__text {
+            width: 343px;
+            height: 163px;
+          }
+        }
+      }
+    }
   }
 
   .contact-form__container-left,
   .contact-form__container-right {
     width: 100%;
-  }
-
-  .contact-form__container-left {
-    margin-bottom: 3.1rem;
-  }
-
-  .contact-us-section__subtitle {
-    text-align: center;
-  }
-
-  .contact-form {
-    margin: auto;
-    max-width: 343px;
-    width: 100%;
-  }
-
-  .contact-form__input-wrapper {
-    display: flex;
-    flex-direction: column;
   }
 
   .contact-form__input_name,
@@ -414,14 +404,5 @@ textarea {
   .contact-form__input_subject {
     width: 343px;
     height: 60px;
-  }
-
-  .contact-form__input_tel {
-    margin-bottom: 1.1rem;
-  }
-
-  .contact-form__text {
-    width: 343px;
-    height: 163px;
   }
 }

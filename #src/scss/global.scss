@@ -2,6 +2,11 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  @include theme-colors($light-theme: true);
+
+  body.dark & {
+    @include theme-colors($light-theme: false);
+  }
 }
 
 .header {
@@ -57,10 +62,6 @@ textarea::placeholder {
   text-transform: capitalize;
 }
 
-body.dark .section__heading {
-  color: $headings-color-dark;
-}
-
 .section__title {
   color: $titles-color;
   font-size: $titles-desktop-font-size;
@@ -68,18 +69,10 @@ body.dark .section__heading {
   text-transform: capitalize;
 }
 
-body.dark .section__title {
-  color: $titles-color-dark;
-}
-
 .section__text {
   color: $section-text-color;
   font-size: $section-text-font-size;
   font-weight: $section-text-font-weight;
-}
-
-body.dark .section__text {
-  color: $section-text-color-dark;
 }
 
 .text-capitalized {
@@ -112,12 +105,6 @@ body.dark .section__text {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
-body.dark .instagram-icon,
-body.dark .twitter-icon,
-body.dark .skype-icon {
-  background-color: $blocks-bg-secondary-color-dark;
-}
-
 @media (max-width: 768px) {
   .section__title {
     font-size: $titles-tablet-font-size;
@@ -133,29 +120,10 @@ body.dark .skype-icon {
 
 // Mixins
 
-@mixin block-white {
+@mixin block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $blocks-bg-primary-color;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-}
-
-@mixin block-black {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $blocks-bg-secondary-color-dark;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-}
-
-@mixin block-deep-black {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $blocks-bg-primary-color-dark;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }

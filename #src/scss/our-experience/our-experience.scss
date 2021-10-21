@@ -1,80 +1,80 @@
 .our-experience-section__main-container {
   padding: 3.75rem 8.4rem;
   background-color: $bg-primary-color;
-}
 
-body.dark .our-experience-section__main-container {
-  background-color: $bg-primary-color-dark;
-}
+  .our-experience-section__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
 
-.our-experience-section__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 1440px;
-  margin: auto;
-}
+    &-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-right: 1.6rem;
+      width: 50%;
 
-.our-experience-section__container-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-right: 1.6rem;
-  width: 50%;
-}
+      .our-experience-section__heading {
+        margin-bottom: 1.5rem;
+      }
 
-.our-experience-section__heading {
-  margin-bottom: 1.5rem;
-}
+      .our-experience-section__title {
+        margin-bottom: 1.1rem;
+      }
 
-.our-experience-section__title {
-  margin-bottom: 1.1rem;
-}
+      .our-experience-section__text {
+        margin-bottom: 1.8rem;
+      }
+    }
 
-.our-experience-section__text {
-  margin-bottom: 1.8rem;
-}
+    &-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
 
-.our-experience-section__container-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-}
+      &__block {
+        display: flex;
 
-.our-experience-section__container-right__block {
-  display: flex;
-}
+        .our-experience-section__item {
+          @include block;
+          margin: 1.88rem;
+          width: 270px;
+          height: 250px;
+          background-color: $blocks-bg-primary-color;
 
-.our-experience-section__item {
-  @include block-white;
-  margin: 1.88rem;
-  width: 270px;
-  height: 250px;
-}
+          &-achievement {
+            font-size: $font-size-m;
+            font-weight: $medium-font-weight;
+            text-transform: capitalize;
+            color: $text-secondary-color;
+          }
+        }
 
-body.dark .our-experience-section__item {
-  @include block-black;
-}
+        .our-experience-section__item1 {
+          margin: 0 0.9rem 0.9rem 0;
+        }
 
-.our-experience-section__item1 {
-  margin: 0 0.9rem 0.9rem 0;
-}
+        .our-experience-section__item2 {
+          margin: 0 0 0.9rem 0.9rem;
+        }
 
-.our-experience-section__item2 {
-  margin: 0 0 0.9rem 0.9rem;
-}
+        .our-experience-section__item3 {
+          margin: 0.9rem 0.9rem 0 0;
+        }
 
-.our-experience-section__item3 {
-  margin: 0.9rem 0.9rem 0 0;
-}
-
-.our-experience-section__item4 {
-  margin: 0.9rem 0 0 0.9rem;
+        .our-experience-section__item4 {
+          margin: 0.9rem 0 0 0.9rem;
+        }
+      }
+    }
+  }
 }
 
 .our-experience-section__container-right__block .our-experience-section__item:nth-child(2) {
@@ -86,13 +86,6 @@ body.dark .our-experience-section__item {
   font-size: $font-size-xxxl;
   font-weight: $bold-font-weight;
   color: $text-primary-color;
-}
-
-.our-experience-section__item-achievement {
-  font-size: $font-size-m;
-  font-weight: $medium-font-weight;
-  text-transform: capitalize;
-  color: $text-secondary-color;
 }
 
 @media (max-width: 1200px) {
@@ -191,7 +184,8 @@ body.dark .our-experience-section__item {
   }
 
   .our-experience-section__item {
-    @include block-white;
+    @include block;
+    background-color: $blocks-bg-primary-color;
     width: 343px;
     height: 250px;
   }
