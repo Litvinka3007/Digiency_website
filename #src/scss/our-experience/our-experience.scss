@@ -91,42 +91,42 @@
 @media (max-width: 1200px) {
   .our-experience-section__main-container {
     padding: 3.75rem 2.5rem;
-  }
 
-  .our-experience-section__container-left {
-    margin-right: 1.5rem;
-  }
+    .our-experience-section__container-left {
+      margin-right: 1.5rem;
+    }
 
-  .our-experience-section__item {
-    width: 162px;
-    height: 150px;
-  }
+    .our-experience-section__item {
+      width: 162px;
+      height: 150px;
 
-  .our-experience-section__item1 {
-    margin: 0 0.25rem 0.25rem 0;
-  }
+      &-achievement {
+        font-size: $base-font-size;
+        font-weight: $base-font-weight;
+      }
+    }
 
-  .our-experience-section__item2 {
-    margin: 0 0 0.25rem 0.25rem;
-  }
+    .our-experience-section__item1 {
+      margin: 0 0.25rem 0.25rem 0;
+    }
 
-  .our-experience-section__item3 {
-    margin: 0.25rem 0.25rem 0 0;
-  }
+    .our-experience-section__item2 {
+      margin: 0 0 0.25rem 0.25rem;
+    }
 
-  .our-experience-section__item4 {
-    margin: 0.25rem 0 0 0.25rem;
+    .our-experience-section__item3 {
+      margin: 0.25rem 0.25rem 0 0;
+    }
+
+    .our-experience-section__item4 {
+      margin: 0.25rem 0 0 0.25rem;
+    }
   }
 
   .our-experience-section__item-number,
   .our-experience-section__plus-sign {
     font-size: $font-size-l;
     font-weight: $medium-font-weight;
-  }
-
-  .our-experience-section__item-achievement {
-    font-size: $base-font-size;
-    font-weight: $base-font-weight;
   }
 
   .tablet-mobile-hidden {
@@ -137,57 +137,62 @@
 @media (max-width: 750px) {
   .our-experience-section__main-container {
     padding: 3.1rem 1rem;
-  }
 
-  .our-experience-section__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
+    .our-experience-section__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
 
-  .our-experience-section__container-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0 0 3.1rem 0;
-    padding: 0 0.7rem;
-    width: 100%;
-    text-align: center;
-  }
+      &-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 0 3.1rem 0;
+        padding: 0 0.7rem;
+        width: 100%;
+        text-align: center;
 
-  .our-experience-section__heading {
-    margin-bottom: 1.1rem;
-  }
+        .our-experience-section__heading {
+          margin-bottom: 1.1rem;
+        }
 
-  .our-experience-section__text {
-    margin-bottom: 0.56rem;
-  }
+        .our-experience-section__text {
+          margin-bottom: 0.56rem;
+        }
+      }
 
-  .our-experience-section__container-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-  }
+      &-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
 
-  .our-experience-section__container-right__block {
-    flex-direction: column;
-    justify-content: flex-start;
-    transform: translateY(0px);
-  }
+        &__block {
+          flex-direction: column;
+          justify-content: flex-start;
+          transform: translateY(0px);
 
-  .our-experience-section__container-right__block-upper {
-    margin-bottom: 1.56rem;
-  }
+          .our-experience-section__item {
+            @include block;
+            background-color: $blocks-bg-primary-color;
+            width: 343px;
+            height: 250px;
 
-  .our-experience-section__item {
-    @include block;
-    background-color: $blocks-bg-primary-color;
-    width: 343px;
-    height: 250px;
+            &-achievement {
+              font-size: $font-size-l;
+              font-weight: $medium-font-weight;
+            }
+          }
+        }
+
+        &__block-upper {
+          margin-bottom: 1.56rem;
+        }
+      }
+    }
   }
 
   .our-experience-section__item1,
@@ -204,10 +209,5 @@
   .our-experience-section__plus-sign {
     font-size: $font-size-xxxl;
     font-weight: $bold-font-weight;
-  }
-
-  .our-experience-section__item-achievement {
-    font-size: $font-size-l;
-    font-weight: $medium-font-weight;
   }
 }

@@ -95,34 +95,34 @@ body.dark .social-icons__item:hover {
 @media (max-width: 768px) {
   .team-member-section__main-container {
     padding: 7.5rem 2.5rem;
-  }
 
-  .team-member-section__heading {
-    margin-bottom: 1.1rem;
-  }
+    .team-member-section__heading {
+      margin-bottom: 1.1rem;
+    }
 
-  .team-member-section__member {
-    margin-right: 1.5rem;
-    padding-bottom: 1.1rem;
-    width: 213px;
-    height: 334px;
+    .team-member-section__member {
+      margin-right: 1.5rem;
+      padding-bottom: 1.1rem;
+      width: 213px;
+      height: 334px;
+    }
   }
 }
 
 @media (max-width: 376px) {
   .team-member-section__main-container {
     padding: 3.1rem 0 3.1rem 1rem;
-  }
 
-  .team-member-section__title {
-    margin-bottom: 1.1rem;
-    text-align: center;
-  }
+    .team-member-section__title {
+      margin-bottom: 1.1rem;
+      text-align: center;
+    }
 
-  .team-member-section__member {
-    margin-right: 0.9rem;
-    padding-bottom: 0.9rem;
-    width: 270px;
-    height: 350px;
+    .team-member-section__member {
+      margin-right: 0.9rem;
+      padding-bottom: 0.9rem;
+      width: 270px;
+      height: 350px;
+    }
   }
 }
