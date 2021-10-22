@@ -2,7 +2,11 @@
   padding: 0 8.4rem;
   width: 100%;
   height: $header-hight-desktop;
-  background-color: $header-bg-color;
+  background-color: $header-bg-color-light;
+}
+
+body.dark .navbar {
+  background-color: $header-bg-color-dark;
 }
 
 .navbar-nav {
@@ -16,7 +20,15 @@
 .navbar-light .navbar-nav .nav-link {
   font-size: $header-font-size-desktop;
   font-weight: $header-font-weight-desktop;
-  color: $header-text-color;
+  color: $header-color-light;
+
+  &:hover {
+    color: $color-orange;
+  }
+}
+
+body.dark .navbar-light .navbar-nav .nav-link {
+  color: $header-color-dark;
 
   &:hover {
     color: $color-orange;
@@ -26,6 +38,13 @@
 .navbar-light .navbar-toggler {
   order: 2;
   border: none;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+  transition: none;
 }
 
 .btn-switсher {
@@ -62,7 +81,7 @@
     height: $header-hight-tablet;
   }
 
-  .nav-link {
+  .navbar-expand-md .navbar-nav .nav-link {
     font-size: $header-font-size-tablet;
     font-weight: $header-font-weight-tablet;
   }

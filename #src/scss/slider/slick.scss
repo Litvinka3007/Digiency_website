@@ -1,5 +1,3 @@
-// ПЕРВЫЙ СЛАЙДЕР (Team-member section)
-
 /* Ограничивающая оболочка */
 .slick-list {
   display: flex;
@@ -24,8 +22,14 @@
   text-align: center;
 }
 
-.our-blog-section__blog-items-page {
-  transform: translateX(-18px);
+// ПЕРВЫЙ СЛАЙДЕР (Team-member section)
+
+.slider .slick-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 370px;
 }
 
 // ВТОРОЙ СЛАЙДЕР (Clients-feedback section)
@@ -79,6 +83,10 @@
 }
 
 @media (max-width: 768px) {
+  .slider-testimonials .slick-list {
+    min-height: 177px;
+  }
+
   .slider-testimonials .slick-dots {
     margin-top: 3.75rem;
   }
@@ -145,14 +153,15 @@
     margin-top: 3.75rem;
   }
 
-  .slick-slide {
+  .slider-blog .slick-slide {
     margin-left: 10px;
     margin-right: 10px;
   }
 
-  .slick-list {
+  .slider-blog .slick-list {
     margin-left: -10px;
     width: calc(100% + 20px);
+    min-height: 240px;
   }
 }
 

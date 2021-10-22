@@ -2,11 +2,6 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  @include theme-colors($light-theme: true);
-
-  body.dark & {
-    @include theme-colors($light-theme: false);
-  }
 }
 
 .header {
@@ -62,6 +57,13 @@ textarea::placeholder {
   text-transform: capitalize;
 }
 
+body.dark .section__heading {
+  color: $headings-color-dark;
+  font-size: $headings-font-size;
+  font-weight: $headings-font-weight;
+  text-transform: capitalize;
+}
+
 .section__title {
   color: $titles-color;
   font-size: $titles-desktop-font-size;
@@ -69,8 +71,21 @@ textarea::placeholder {
   text-transform: capitalize;
 }
 
+body.dark .section__title {
+  color: $titles-color-dark;
+  font-size: $titles-desktop-font-size;
+  font-weight: $titles-font-weight;
+  text-transform: capitalize;
+}
+
 .section__text {
   color: $section-text-color;
+  font-size: $section-text-font-size;
+  font-weight: $section-text-font-weight;
+}
+
+body.dark .section__text {
+  color: $section-text-color-dark;
   font-size: $section-text-font-size;
   font-weight: $section-text-font-weight;
 }
@@ -120,10 +135,29 @@ textarea::placeholder {
 
 // Mixins
 
-@mixin block {
+@mixin block-white {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: $blocks-bg-primary-color;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+@mixin block-black {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $blocks-bg-secondary-color-dark;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+@mixin block-deep-black {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $blocks-bg-primary-color-dark;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }

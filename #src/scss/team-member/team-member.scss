@@ -1,50 +1,67 @@
 .team-member-section__main-container {
   padding: 7.5rem 8.4rem;
   background-color: $bg-secondary-color;
+}
 
-  .team-member-section__container {
-    max-width: 1440px;
-    margin: auto;
+body.dark .team-member-section__main-container {
+  background-color: $bg-secondary-color-dark;
+}
 
-    .team-member-section__heading {
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
+.team-member-section__container {
+  max-width: 1440px;
+  margin: auto;
+}
 
-    .team-member-section__title {
-      margin-bottom: 3.75rem;
-      text-align: center;
-    }
+.team-member-section__heading {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 
-    .team-member-section__member {
-      position: relative;
-      @include block;
-      margin-right: 30px;
-      padding-bottom: 0.9rem;
-      width: 270px;
-      height: 350px;
-      text-align: center;
-      background-color: $blocks-bg-primary-color;
+.team-member-section__title {
+  margin-bottom: 3.75rem;
+  text-align: center;
+}
 
-      .team-member-section__photo {
-        margin-bottom: 1.5rem;
-      }
+.team-member-section__member {
+  position: relative;
+  @include block-white;
+  margin-right: 30px;
+  padding-bottom: 0.9rem;
+  width: 270px;
+  height: 350px;
+  text-align: center;
+}
 
-      .team-member-section__name {
-        margin-bottom: 0.75rem;
-        font-size: $font-size-m;
-        font-weight: $medium-font-weight;
-        color: $text-names-color;
-      }
+body.dark .team-member-section__member {
+  position: relative;
+  @include block-deep-black;
+  margin-right: 30px;
+  padding-bottom: 0.9rem;
+  width: 270px;
+  height: 350px;
+  text-align: center;
+}
 
-      .team-member-section__position {
-        font-size: $base-font-size;
-        font-weight: $base-font-weight;
-        text-transform: capitalize;
-        color: $text-secondary-color;
-      }
-    }
-  }
+.team-member-section__photo {
+  margin-bottom: 1.5rem;
+}
+
+.team-member-section__name {
+  margin-bottom: 0.75rem;
+  font-size: $font-size-m;
+  font-weight: $medium-font-weight;
+  color: $text-names-color;
+}
+
+body.dark .team-member-section__name {
+  color: $text-names-color-dark;
+}
+
+.team-member-section__position {
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  text-transform: capitalize;
+  color: $text-secondary-color;
 }
 
 .social-icons-gustavo,
@@ -63,6 +80,7 @@
 .team-member-section__member-talan:hover .social-icons-talan,
 .team-member-section__member-abram:hover .social-icons-abram {
   display: flex;
+  flex-direction: column;
 }
 
 .social-icons__item:hover {
