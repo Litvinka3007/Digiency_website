@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if (start === end) {
             clearInterval(interval);
           }
-        }, 200);
+        }, 30);
       }
     });
   });

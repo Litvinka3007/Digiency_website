@@ -1,29 +1,33 @@
 .our-experience-section__main-container {
   padding: 3.75rem 8.4rem;
   background-color: $bg-primary-color;
-}
 
-body.dark .our-experience-section__main-container {
-  background-color: $bg-primary-color-dark;
-}
+  .our-experience-section__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
 
-.our-experience-section__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 1440px;
-  margin: auto;
-}
+    .our-experience-section__container-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-right: 1.6rem;
+      width: 50%;
+    }
 
-.our-experience-section__container-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-right: 1.6rem;
-  width: 50%;
+    .our-experience-section__container-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+    }
+  }
 }
 
 .our-experience-section__heading {
@@ -38,14 +42,6 @@ body.dark .our-experience-section__main-container {
   margin-bottom: 1.8rem;
 }
 
-.our-experience-section__container-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-}
-
 .our-experience-section__container-right__block {
   display: flex;
 }
@@ -55,10 +51,6 @@ body.dark .our-experience-section__main-container {
   margin: 1.88rem;
   width: 270px;
   height: 250px;
-}
-
-body.dark .our-experience-section__item {
-  @include block-black;
 }
 
 .our-experience-section__item1 {
@@ -88,11 +80,6 @@ body.dark .our-experience-section__item {
   color: $text-primary-color;
 }
 
-body.dark .our-experience-section__item-number,
-body.dark .our-experience-section__plus-sign {
-  color: $text-primary-color-dark;
-}
-
 .our-experience-section__item-achievement {
   font-size: $font-size-m;
   font-weight: $medium-font-weight;
@@ -103,10 +90,13 @@ body.dark .our-experience-section__plus-sign {
 @media (max-width: 1200px) {
   .our-experience-section__main-container {
     padding: 3.75rem 2.5rem;
-  }
 
-  .our-experience-section__container-left {
-    margin-right: 1.5rem;
+    .our-experience-section__container {
+
+      .our-experience-section__container-left {
+        margin-right: 1.5rem;
+      }
+    }
   }
 
   .our-experience-section__item {
@@ -149,24 +139,32 @@ body.dark .our-experience-section__plus-sign {
 @media (max-width: 750px) {
   .our-experience-section__main-container {
     padding: 3.1rem 1rem;
-  }
 
-  .our-experience-section__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
+    .our-experience-section__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
 
-  .our-experience-section__container-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0 0 3.1rem 0;
-    padding: 0 0.7rem;
-    width: 100%;
-    text-align: center;
+      .our-experience-section__container-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 0 3.1rem 0;
+        padding: 0 0.7rem;
+        width: 100%;
+        text-align: center;
+      }
+
+      .our-experience-section__container-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   .our-experience-section__heading {
@@ -175,14 +173,6 @@ body.dark .our-experience-section__plus-sign {
 
   .our-experience-section__text {
     margin-bottom: 0.56rem;
-  }
-
-  .our-experience-section__container-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
   }
 
   .our-experience-section__container-right__block {
@@ -196,7 +186,6 @@ body.dark .our-experience-section__plus-sign {
   }
 
   .our-experience-section__item {
-    @include block-white;
     width: 343px;
     height: 250px;
   }

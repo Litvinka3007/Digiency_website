@@ -1,45 +1,32 @@
 .team-member-section__main-container {
   padding: 7.5rem 8.4rem;
   background-color: $bg-secondary-color;
-}
 
-body.dark .team-member-section__main-container {
-  background-color: $bg-secondary-color-dark;
-}
+  .team-member-section__container {
+    max-width: 1440px;
+    margin: auto;
 
-.team-member-section__container {
-  max-width: 1440px;
-  margin: auto;
-}
+    .team-member-section__heading {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
 
-.team-member-section__heading {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.team-member-section__title {
-  margin-bottom: 3.75rem;
-  text-align: center;
+    .team-member-section__title {
+      margin-bottom: 3.75rem;
+      text-align: center;
+    }
+  }
 }
 
 .team-member-section__member {
   position: relative;
   @include block-white;
+  justify-content: flex-start;
   margin-right: 30px;
-  padding-bottom: 0.9rem;
-  width: 270px;
+  width: 243px;
   height: 350px;
   text-align: center;
-}
-
-body.dark .team-member-section__member {
-  position: relative;
-  @include block-deep-black;
-  margin-right: 30px;
-  padding-bottom: 0.9rem;
-  width: 270px;
-  height: 350px;
-  text-align: center;
+  transform: translateX(10px);
 }
 
 .team-member-section__photo {
@@ -53,11 +40,8 @@ body.dark .team-member-section__member {
   color: $text-names-color;
 }
 
-body.dark .team-member-section__name {
-  color: $text-names-color-dark;
-}
-
 .team-member-section__position {
+  margin-bottom: 0.9rem;
   font-size: $base-font-size;
   font-weight: $base-font-weight;
   text-transform: capitalize;
@@ -87,8 +71,12 @@ body.dark .team-member-section__name {
   background-color: $color-red;
 }
 
-body.dark .social-icons__item:hover {
-  background-color: $color-red;
+// Responsive
+@media (min-width: 1440px) {
+  .team-member-section__member {
+    width: 270px;
+    height: 350px;
+  }
 }
 
 @media (max-width: 1230px) {
@@ -113,34 +101,41 @@ body.dark .social-icons__item:hover {
 @media (max-width: 768px) {
   .team-member-section__main-container {
     padding: 7.5rem 2.5rem;
+  }
 
-    .team-member-section__heading {
-      margin-bottom: 1.1rem;
-    }
+  .team-member-section__heading {
+    margin-bottom: 1.1rem;
+  }
 
-    .team-member-section__member {
-      margin-right: 1.5rem;
-      padding-bottom: 1.1rem;
-      width: 213px;
-      height: 334px;
-    }
+  .team-member-section__member {
+    margin-right: 1.5rem;
+    width: 213px;
+    height: 318px;
+    transform: none;
+  }
+
+  .team-member-section__position {
+    margin-bottom: 1.1rem;
   }
 }
 
 @media (max-width: 376px) {
   .team-member-section__main-container {
     padding: 3.1rem 0 3.1rem 1rem;
+  }
 
-    .team-member-section__title {
-      margin-bottom: 1.1rem;
-      text-align: center;
-    }
+  .team-member-section__title {
+    margin-bottom: 1.1rem;
+    text-align: center;
+  }
 
-    .team-member-section__member {
-      margin-right: 0.9rem;
-      padding-bottom: 0.9rem;
-      width: 270px;
-      height: 350px;
-    }
+  .team-member-section__member {
+    margin-right: 0.9rem;
+    width: 270px;
+    height: 350px;
+  }
+
+  .team-member-section__position {
+    margin-bottom: 0.9rem;
   }
 }

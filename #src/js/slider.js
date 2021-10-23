@@ -13,7 +13,7 @@ $(document).ready(function() {
     touchThreshold: 10,
     touchMove: true,
     waitForAnimate: true,
-    centerMode: true,
+    centerMode: false,
     variableWidth: true,
     mobileFirst: true,
     responsive: [

@@ -5,10 +5,6 @@
   background-color: $header-bg-color-light;
 }
 
-body.dark .navbar {
-  background-color: $header-bg-color-dark;
-}
-
 .navbar-nav {
   margin-left: 3.8rem;
 }
@@ -21,14 +17,6 @@ body.dark .navbar {
   font-size: $header-font-size-desktop;
   font-weight: $header-font-weight-desktop;
   color: $header-color-light;
-
-  &:hover {
-    color: $color-orange;
-  }
-}
-
-body.dark .navbar-light .navbar-nav .nav-link {
-  color: $header-color-dark;
 
   &:hover {
     color: $color-orange;
@@ -52,6 +40,7 @@ body.dark .navbar-light .navbar-nav .nav-link {
 }
 
 // Responsive
+
 @media (max-width: 1200px) {
   .navbar {
     padding: 0 2.5rem;
