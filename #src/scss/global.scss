@@ -1,10 +1,143 @@
-html,
-body {
-  height: 100%;
-}
-
 body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  margin: auto;
+}
+
+.btn,
+.btn:active,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+  transition: none;
+}
+
+.btn-primary {
+  width: 150px;
+  height: 50px;
+  margin-top: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: $button-primary-color;
+  color: $text-third-color;
+  font-size: $button-primary-font-size;
+  font-weight: $button-primary-font-weight;
+  text-transform: capitalize;
+  &:hover {
+    background-color: $button-primary-color;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.text-orange {
+  color: $color-orange;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $text-secondary-color;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+}
+
+.section__heading {
+  color: $headings-color;
+  font-size: $headings-font-size;
+  font-weight: $headings-font-weight;
+  text-transform: capitalize;
+}
+
+.section__title {
+  color: $titles-color;
+  font-size: $titles-desktop-font-size;
+  font-weight: $titles-font-weight;
+  text-transform: capitalize;
+}
+
+.section__text {
+  color: $section-text-color;
+  font-size: $section-text-font-size;
+  font-weight: $section-text-font-weight;
+}
+
+.text-capitalized {
+  text-transform: capitalize;
+}
+
+.text-lowercased {
+  text-transform: lowercase;
+}
+
+.social-icons__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+.fb-icon {
+  background-color: $color-orange;
+  box-shadow: 4px 5px 15px rgba(255, 83, 0, 0.4);
+}
+
+.instagram-icon,
+.twitter-icon,
+.skype-icon {
+  margin-top: 5px;
+  background-color: $blocks-bg-secondary-color;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    font-size: $titles-tablet-font-size;
+  }
+}
+
+@media (max-width: 376px) {
+  .section__title {
+    font-size: $titles-mobile-font-size;
+    font-weight: $titles-mobile-font-weight;
+  }
+}
+
+// Mixins
+
+@mixin block-white {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $blocks-bg-primary-color;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+@mixin block-black {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $blocks-bg-secondary-color-dark;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+@mixin block-deep-black {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $blocks-bg-primary-color-dark;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }

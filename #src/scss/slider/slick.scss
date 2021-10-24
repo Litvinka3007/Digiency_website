@@ -1,0 +1,172 @@
+/* Ограничивающая оболочка */
+.slick-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 315px;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0 0;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-item {
+  text-align: center;
+}
+
+// ПЕРВЫЙ СЛАЙДЕР (Team-member section)
+
+.slider .slick-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 370px;
+}
+
+// ВТОРОЙ СЛАЙДЕР (Clients-feedback section)
+
+.slider-testimonials {
+  position: relative;
+}
+
+/* Точки (булиты) */
+.slider-testimonials .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.1rem;
+}
+
+.slider-testimonials .slick-dots li {
+  list-style: none;
+  margin: 0 2px;
+}
+
+/* Элемент точки */
+.slider-testimonials .slick-dots button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  background-color: $color-orange;
+}
+
+#slick-slide-control11 {
+  background-color: $color-grey-deep;
+}
+
+#slick-slide-control12 {
+  background-color: $color-grey-light;
+}
+
+#slick-slide-control10:hover,
+#slick-slide-control11:hover,
+#slick-slide-control12:hover {
+  background-color: $color-red;
+}
+
+/* Активная точка */
+.slider-testimonials .slick-dots li.slick-active button {
+  width: 49px;
+  height: 15px;
+  border-radius: 7.5px;
+}
+
+@media (max-width: 768px) {
+  .slider-testimonials .slick-list {
+    min-height: 177px;
+  }
+
+  .slider-testimonials .slick-dots {
+    margin-top: 3.75rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .slider-testimonials .slick-dots {
+    margin-top: 1.56rem;
+  }
+}
+
+// ТРЕТИЙ СЛАЙДЕР (our-blog section)
+
+.slider-blog {
+  position: relative;
+}
+
+/* Точки (булиты) */
+.slider-blog .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.75rem;
+}
+
+.slider-blog .slick-dots li {
+  list-style: none;
+  margin: 0 2px;
+}
+
+/* Элемент точки */
+.slider-blog .slick-dots button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  background-color: $color-orange;
+}
+
+#slick-slide-control21 {
+  background-color: $color-grey-deep;
+}
+
+#slick-slide-control22 {
+  background-color: $color-grey-light;
+}
+
+#slick-slide-control20:hover,
+#slick-slide-control21:hover,
+#slick-slide-control22:hover {
+  background-color: $color-red;
+}
+
+/* Активная точка */
+.slider-blog .slick-dots li.slick-active button {
+  width: 49px;
+  height: 15px;
+  border-radius: 7.5px;
+}
+
+@media (max-width: 768px) {
+  .slider-blog .slick-dots {
+    margin-top: 3.75rem;
+  }
+
+  .slider-blog .slick-slide {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .slider-blog .slick-list {
+    margin-left: -10px;
+    width: calc(100% + 20px);
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 376px) {
+  .slider-blog .slick-dots {
+    margin-top: 1.56rem;
+  }
+}

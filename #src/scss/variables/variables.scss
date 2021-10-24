@@ -1,17 +1,33 @@
-// Global colors
+// GLOBAL COLORS
 
 $color-grey-light: #7B7B7B;
 $color-grey-middle: #3A3B3C;
-$color-grey-dark: #373737;
-$color-grey-deep: #242526;
-$color-black: #18191A;
+$color-grey-deep: #373737;
+$color-grey-dark: #18191A;
+$color-black: #242526;
+$color-deep-black: #000000;
 $color-white: #FFFFFF;
 $color-orange-light: #FFF7F4;
 $color-orange: #FF5300;
 $color-blue: #00ACFF;
+$color-red: #FF0000FF;
 
-// Global fonts
+// PRIMARY COLORS
 
+$bg-primary-color: $color-orange-light;
+$button-primary-color: $color-orange;
+$text-primary-color: $color-grey-deep;
+
+// SECONDARY COLORS
+
+$bg-secondary-color: $color-white;
+$text-secondary-color: $color-grey-light;
+$text-third-color: $color-white;
+$text-names-color: $color-deep-black;
+
+// GLOBAL FONTS
+
+// Font-sizes
 $font-size-xxs: 0.6rem; // 10px
 $font-size-xs: 0.75rem; // 12px
 $font-size-s: 1rem; // 16px
@@ -20,3 +36,80 @@ $font-size-l: 1.56rem; // 25px
 $font-size-xl: 1.9rem; // 31px
 $font-size-xxl: 2.4rem; // 39px
 $font-size-xxxl: 3rem; // 48px
+
+// Font-weights
+$normal-font-weight: 400;
+$medium-font-weight: 500;
+$semi-bold-font-weight: 600;
+$bold-font-weight: 700;
+
+// PRIMARY FONTS
+
+$base-font-size: $font-size-s;
+$base-font-weight: $normal-font-weight;
+
+// SPECIAL FONTS, SIZES AND COLORS
+
+// Header
+$header-bg-color-light: $color-white;
+$header-bg-color-dark: $color-grey-middle;
+
+$header-color-light: $color-grey-deep;
+$header-color-dark: $color-white;
+
+$header-font-size-desktop: $font-size-m;
+$header-font-weight-desktop: $medium-font-weight;
+$header-font-size-tablet: $font-size-s;
+$header-font-weight-tablet: $normal-font-weight;
+
+$header-hight-desktop: 6.25rem;
+$header-hight-tablet: 5rem;
+$header-hight-mobile: 3rem;
+
+// Footer
+$footer-bg-primary-color: $color-grey-deep;
+$footer-bg-secondary-color: $color-orange;
+$footer-base-font-size: $base-font-size;
+$footer-base-font-weight: $base-font-weight;
+$footer-base-text-color: $color-white;
+
+// OTHER
+
+// Button
+$button-primary-font-size: $font-size-m;
+$button-primary-font-weight: $medium-font-weight;
+
+// Blocks
+$blocks-bg-primary-color: $color-white;
+$blocks-bg-secondary-color: $color-white;
+
+// Headings
+$headings-color: $text-secondary-color;
+$headings-font-size: $base-font-size;
+$headings-font-weight: $base-font-weight;
+
+// Titles
+$titles-color: $text-primary-color;
+$titles-desktop-font-size: $font-size-xxl;
+$titles-tablet-font-size: $font-size-xl;
+$titles-mobile-font-size: $font-size-l;
+$titles-font-weight: $semi-bold-font-weight;
+$titles-mobile-font-weight: $medium-font-weight;
+
+// Text in sections
+$section-text-color: $text-secondary-color;
+$section-text-font-size: $base-font-size;
+$section-text-font-weight: $base-font-weight;
+
+// DARK MODE
+
+$bg-primary-color-dark: $color-black;
+$bg-secondary-color-dark: $color-grey-dark;
+$blocks-bg-primary-color-dark: $color-black;
+$blocks-bg-secondary-color-dark: $color-grey-middle;
+$text-primary-color-dark: $color-white;
+$text-secondary-color-dark: $color-white;
+$text-names-color-dark: $color-white;
+$headings-color-dark: $color-white;
+$titles-color-dark: $color-white;
+$section-text-color-dark: $color-white;

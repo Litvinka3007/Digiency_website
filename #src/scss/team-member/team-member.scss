@@ -1,0 +1,141 @@
+.team-member-section__main-container {
+  padding: 7.5rem 8.4rem;
+  background-color: $bg-secondary-color;
+
+  .team-member-section__container {
+    max-width: 1440px;
+    margin: auto;
+
+    .team-member-section__heading {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .team-member-section__title {
+      margin-bottom: 3.75rem;
+      text-align: center;
+    }
+  }
+}
+
+.team-member-section__member {
+  position: relative;
+  @include block-white;
+  justify-content: flex-start;
+  margin-right: 30px;
+  width: 243px;
+  height: 350px;
+  text-align: center;
+  transform: translateX(10px);
+}
+
+.team-member-section__photo {
+  margin-bottom: 1.5rem;
+}
+
+.team-member-section__name {
+  margin-bottom: 0.75rem;
+  font-size: $font-size-m;
+  font-weight: $medium-font-weight;
+  color: $text-names-color;
+}
+
+.team-member-section__position {
+  margin-bottom: 0.9rem;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  text-transform: capitalize;
+  color: $text-secondary-color;
+}
+
+.social-icons-gustavo,
+.social-icons-phillip,
+.social-icons-talan,
+.social-icons-abram {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 29px;
+  margin: 0;
+}
+
+.team-member-section__member-gustavo:hover .social-icons-gustavo,
+.team-member-section__member-phillip:hover .social-icons-phillip,
+.team-member-section__member-talan:hover .social-icons-talan,
+.team-member-section__member-abram:hover .social-icons-abram {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons__item:hover {
+  background-color: $color-red;
+}
+
+// Responsive
+@media (min-width: 1440px) {
+  .team-member-section__member {
+    width: 270px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .social-icons-gustavo,
+  .social-icons-phillip,
+  .social-icons-talan,
+  .social-icons-abram {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 29px;
+  }
+
+  .team-member-section__member-gustavo:hover .social-icons-gustavo,
+  .team-member-section__member-phillip:hover .social-icons-phillip,
+  .team-member-section__member-talan:hover .social-icons-talan,
+  .team-member-section__member-abram:hover .social-icons-abram {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-member-section__main-container {
+    padding: 7.5rem 2.5rem;
+  }
+
+  .team-member-section__heading {
+    margin-bottom: 1.1rem;
+  }
+
+  .team-member-section__member {
+    margin-right: 1.5rem;
+    width: 213px;
+    height: 318px;
+    transform: none;
+  }
+
+  .team-member-section__position {
+    margin-bottom: 1.1rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .team-member-section__main-container {
+    padding: 3.1rem 0 3.1rem 1rem;
+  }
+
+  .team-member-section__title {
+    margin-bottom: 1.1rem;
+    text-align: center;
+  }
+
+  .team-member-section__member {
+    margin-right: 0.9rem;
+    width: 270px;
+    height: 350px;
+  }
+
+  .team-member-section__position {
+    margin-bottom: 0.9rem;
+  }
+}

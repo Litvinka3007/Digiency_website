@@ -1,0 +1,317 @@
+.footer {
+  font-size: $footer-base-font-size;
+  font-weight: $footer-base-font-weight;
+  color: $footer-base-text-color;
+
+  &__container {
+    width: 100%;
+    margin: auto;
+
+    &-top {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 4.1rem 8.4rem 3.6rem 8.4rem;
+      background-color: $footer-bg-primary-color;
+
+      .footer__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 25%;
+        margin-right: 2.3rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        &-heading {
+          margin-bottom: 1.56rem;
+          font-size: $font-size-xxl;
+          font-weight: $semi-bold-font-weight;
+          text-transform: capitalize;
+        }
+
+        .footer__message-block-text {
+          margin-bottom: 1.56rem;
+        }
+
+        .footer__message-block-message-field {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          box-sizing: border-box;
+          border: 1px solid $color-orange;
+
+          .email-field {
+            padding: 1.1rem;
+            width: 189px;
+            height: 60px;
+            background: transparent;
+          }
+
+          .email-btn__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 81px;
+            height: 60px;
+            background-color: $color-orange;
+          }
+        }
+      }
+
+      .footer__contacts-block {
+        padding-top: 0.4rem;
+
+        &-logo {
+          margin-bottom: 1.56rem;
+
+          .footer-logo {
+            width: 162px;
+            height: auto;
+          }
+        }
+
+        &-text {
+          margin-bottom: 1.1rem;
+        }
+
+        &-social-icons {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          width: 240px;
+
+          .footer__social-icons-item {
+            margin: 0;
+          }
+
+          .footer__fb-icon {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 8.4rem;
+      background-color: $footer-bg-secondary-color;
+
+      .copyright-block {
+        text-transform: capitalize;
+      }
+
+      .to-top-button:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.footer__menu-block-items,
+.footer__services-block-items {
+  list-style: none;
+}
+
+.footer__menu-block-item,
+.footer__services-block-item {
+  margin-bottom: 0.6rem;
+  text-transform: capitalize;
+}
+
+.footer__menu-block-item:last-of-type,
+.footer__services-block-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer__menu-block-link,
+.footer__services-block-link {
+  text-decoration: none;
+  color: $footer-base-text-color;
+
+  &:hover {
+    color: $color-orange;
+  }
+}
+
+// Responsive
+@media (max-width: 1200px) {
+  .footer__container-top {
+    padding: 3.75rem 2.5rem 3.25rem 2.5rem;
+
+    .footer__block {
+      margin-right: 1.4rem;
+
+      &-heading {
+        margin-bottom: 1.1rem;
+        font-size: $font-size-l;
+        font-weight: $medium-font-weight;
+      }
+
+      .footer__message-block-message-field {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+        border: 1px solid $color-orange;
+
+        .email-field {
+          padding: 0.75rem;
+          width: 119px;
+          height: 40px;
+          background: transparent;
+        }
+
+        input::placeholder {
+          font-size: $font-size-xs;
+        }
+
+        .email-btn__wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 35px;
+          height: 40px;
+          background-color: $color-orange;
+        }
+      }
+    }
+
+    .footer__contacts-block {
+      padding-top: 0;
+
+      &-logo {
+        margin-bottom: 1.1rem;
+
+        .footer-logo {
+          width: 105px;
+          height: auto;
+        }
+      }
+
+      &-social-icons {
+        width: 153px;
+
+        .footer__social-icons-item {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .footer__container-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.1rem 2.5rem;
+
+    .copyright-block {
+      text-align: center;
+    }
+
+    .to-top-button {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .footer__container-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3.1rem 1rem;
+
+    .footer__block {
+      width: 100%;
+      margin: 0 0 3.1rem 0;
+
+      &:last-of-type {
+        margin: 0;
+      }
+
+      &-heading {
+        font-size: $font-size-xl;
+        font-weight: $semi-bold-font-weight;
+      }
+
+      .footer__message-block-text {
+        margin-bottom: 1.1rem;
+      }
+
+      .footer__message-block-message-field {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+        border: 1px solid $color-orange;
+
+        .email-field {
+          padding: 1.1rem;
+          width: 262px;
+          height: 60px;
+          background: transparent;
+        }
+
+        .email-btn__wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 81px;
+          height: 60px;
+          background-color: $color-orange;
+        }
+      }
+    }
+
+    .footer__contacts-block {
+      padding-top: 0;
+
+      &-logo {
+        margin-bottom: 1.1rem;
+
+        .footer-logo {
+          width: 129px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .footer__message-block-message-field {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    border: 1px solid $color-orange;
+
+    .email-field {
+      padding: 1.1rem;
+      width: 215px;
+      height: 60px;
+      background: transparent;
+    }
+
+    .email-btn__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background-color: $color-orange;
+    }
+  }
+}

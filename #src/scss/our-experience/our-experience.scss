@@ -1,0 +1,213 @@
+.our-experience-section__main-container {
+  padding: 3.75rem 8.4rem;
+  background-color: $bg-primary-color;
+
+  .our-experience-section__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+
+    .our-experience-section__container-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-right: 1.6rem;
+      width: 50%;
+    }
+
+    .our-experience-section__container-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+    }
+  }
+}
+
+.our-experience-section__heading {
+  margin-bottom: 1.5rem;
+}
+
+.our-experience-section__title {
+  margin-bottom: 1.1rem;
+}
+
+.our-experience-section__text {
+  margin-bottom: 1.8rem;
+}
+
+.our-experience-section__container-right__block {
+  display: flex;
+}
+
+.our-experience-section__item {
+  @include block-white;
+  margin: 1.88rem;
+  width: 270px;
+  height: 250px;
+}
+
+.our-experience-section__item1 {
+  margin: 0 0.9rem 0.9rem 0;
+}
+
+.our-experience-section__item2 {
+  margin: 0 0 0.9rem 0.9rem;
+}
+
+.our-experience-section__item3 {
+  margin: 0.9rem 0.9rem 0 0;
+}
+
+.our-experience-section__item4 {
+  margin: 0.9rem 0 0 0.9rem;
+}
+
+.our-experience-section__container-right__block .our-experience-section__item:nth-child(2) {
+  transform: translateY(23px);
+}
+
+.our-experience-section__item-number,
+.our-experience-section__plus-sign {
+  font-size: $font-size-xxxl;
+  font-weight: $bold-font-weight;
+  color: $text-primary-color;
+}
+
+.our-experience-section__item-achievement {
+  font-size: $font-size-m;
+  font-weight: $medium-font-weight;
+  text-transform: capitalize;
+  color: $text-secondary-color;
+}
+
+@media (max-width: 1200px) {
+  .our-experience-section__main-container {
+    padding: 3.75rem 2.5rem;
+
+    .our-experience-section__container {
+
+      .our-experience-section__container-left {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  .our-experience-section__item {
+    width: 162px;
+    height: 150px;
+  }
+
+  .our-experience-section__item1 {
+    margin: 0 0.25rem 0.25rem 0;
+  }
+
+  .our-experience-section__item2 {
+    margin: 0 0 0.25rem 0.25rem;
+  }
+
+  .our-experience-section__item3 {
+    margin: 0.25rem 0.25rem 0 0;
+  }
+
+  .our-experience-section__item4 {
+    margin: 0.25rem 0 0 0.25rem;
+  }
+
+  .our-experience-section__item-number,
+  .our-experience-section__plus-sign {
+    font-size: $font-size-l;
+    font-weight: $medium-font-weight;
+  }
+
+  .our-experience-section__item-achievement {
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+  }
+
+  .tablet-mobile-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .our-experience-section__main-container {
+    padding: 3.1rem 1rem;
+
+    .our-experience-section__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      .our-experience-section__container-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 0 3.1rem 0;
+        padding: 0 0.7rem;
+        width: 100%;
+        text-align: center;
+      }
+
+      .our-experience-section__container-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .our-experience-section__heading {
+    margin-bottom: 1.1rem;
+  }
+
+  .our-experience-section__text {
+    margin-bottom: 0.56rem;
+  }
+
+  .our-experience-section__container-right__block {
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translateY(0px);
+  }
+
+  .our-experience-section__container-right__block-upper {
+    margin-bottom: 1.56rem;
+  }
+
+  .our-experience-section__item {
+    width: 343px;
+    height: 250px;
+  }
+
+  .our-experience-section__item1,
+  .our-experience-section__item3 {
+    margin: 0;
+  }
+
+  .our-experience-section__item2,
+  .our-experience-section__item4 {
+    margin: 0 0 1.56rem 0;
+  }
+
+  .our-experience-section__item-number,
+  .our-experience-section__plus-sign {
+    font-size: $font-size-xxxl;
+    font-weight: $bold-font-weight;
+  }
+
+  .our-experience-section__item-achievement {
+    font-size: $font-size-l;
+    font-weight: $medium-font-weight;
+  }
+}

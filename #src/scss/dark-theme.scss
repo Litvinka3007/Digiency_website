@@ -1,0 +1,167 @@
+// Global
+
+body.dark .section__heading {
+  color: $headings-color-dark;
+}
+
+body.dark .section__title {
+  color: $titles-color-dark;
+}
+
+body.dark .section__text {
+  color: $section-text-color-dark;
+}
+
+// Header
+
+body.dark .navbar {
+  background-color: $header-bg-color-dark;
+}
+
+body.dark .navbar-light .navbar-nav .nav-link {
+  color: $header-color-dark;
+
+  &:hover {
+    color: $color-orange;
+  }
+}
+
+// Hero-section
+
+body.dark .hero-section__main-container {
+  background-color: $bg-primary-color-dark;
+
+  .hero-section__heading {
+    color: $text-primary-color-dark;
+  }
+
+  .hero-section__subheading {
+    color: $text-secondary-color-dark;
+  }
+
+  .social-icons__main-item {
+    background-color: $blocks-bg-secondary-color-dark;
+    box-shadow: none;
+
+    &:hover {
+      background-color: $color-red;
+    }
+  }
+}
+
+// About us
+
+body.dark .about-us-section__main-container {
+  background-color: $bg-secondary-color-dark;
+}
+
+body.dark .about-us-section__advantages-item {
+  @include block-deep-black;
+  justify-content: flex-start;
+}
+
+body.dark .about-us-section__advantages-name {
+  color: $text-primary-color-dark;
+}
+
+// Our experience
+
+body.dark .our-experience-section__main-container {
+  background-color: $bg-primary-color-dark;
+}
+
+body.dark .our-experience-section__item {
+  @include block-black;
+}
+
+body.dark .our-experience-section__item-number,
+body.dark .our-experience-section__plus-sign {
+  color: $color-orange-light;
+}
+
+// Team member
+
+body.dark .team-member-section__main-container {
+  background-color: $bg-secondary-color-dark;
+}
+
+body.dark .team-member-section__member {
+  @include block-deep-black;
+  justify-content: flex-start;
+}
+
+body.dark .team-member-section__name {
+  color: $text-names-color-dark;
+}
+
+// Our work
+
+body.dark .our-work-section__main-container {
+  background-color: $bg-secondary-color-dark;
+}
+
+// Clients feedback
+
+body.dark .clients-feedback-section__main-container {
+  background-color: $bg-primary-color-dark;
+}
+
+// Our blog
+
+body.dark .our-blog-section__main-container {
+  background-color: $bg-secondary-color-dark;
+}
+
+body.dark .our-blog-section__blog-item {
+  background-color: $blocks-bg-primary-color-dark;
+}
+
+body.dark .our-blog-section__blog-item-heading {
+  color: $text-primary-color-dark;
+}
+
+body.dark .our-blog-section__blog-item-details-author-name {
+  color: $text-primary-color-dark;
+}
+
+// Contact us
+
+body.dark .contact-us-section__main-container {
+  background-color: $bg-secondary-color-dark;
+}
+
+body.dark .contact-info__item {
+  @include block-deep-black;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+body.dark .contact-us-section__subtitle {
+  color: $titles-color-dark;
+}
+
+body.dark .contact-info__item-call {
+  color: $text-primary-color-dark;
+}
+
+body.dark .contact-info__item-contact {
+  color: $text-secondary-color-dark;
+
+  a {
+    color: $text-secondary-color-dark;
+  }
+}
+
+body.dark .contact-form__input {
+  background-color: $blocks-bg-primary-color-dark;
+}
+
+body.dark .contact-form__input::placeholder {
+  color: $text-secondary-color-dark;
+}
+
+// Brands
+
+body.dark .brands-section__main-container {
+  background-color: $bg-secondary-color-dark;
+}
